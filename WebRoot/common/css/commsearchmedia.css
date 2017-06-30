@@ -1,0 +1,100 @@
+	@CHARSET "UTF-8"; 				  
+		@media screen and (min-width: 1920px) { 
+           .main{width:100%;} .down{width:100%;}
+           .down-left{width:13%;height:76em;}
+           .downrig{width:86.5%;} .table-title{width:100%;}
+           .table-conment{width:98%;} .allcoment{width:100%;}
+           #tableExcel{width:100%;} a{font-size:15px;}
+           *{font-size:15px;} #bigView img{width:280px;height:280px;}
+           .consearch span input{width:100px;} 
+	       #starttime,#endtime{width:145px;}.table-title select{width:7.7em;}
+		} 
+		@media screen and (min-width: 1800px) and (max-width:1920px){    
+           .main{width:100%;} .down{width:100%;}
+           .down-left{width:13%;height:76em;}.table-title select{width:7.7em;}
+           .downrig{width:86.5%;} .table-title{width:100%;}
+           .table-conment{width:98%;} .allcoment{width:100%;}
+           #tableExcel{width:100%;} #bigView img{width:250px;height:250px;}
+           *{font-size:15px;}  #bigView img{width:300px;height:300px;}
+           .consearch span input{width:100px;} 
+	       #starttime,#endtime{min-width:145px;}
+		}
+		@media screen and (min-width: 1500px) and (max-width: 1800px){ 
+           .main{width:100%;} .down{width:100%;}
+           .down-left{width:12%;height:76em;}
+           .downrig{width:87%;} .table-title{width:100%;}
+           .table-conment{width:98%;} .allcoment{width:100%;}
+           #tableExcel{width:100%;} 
+           *{font-size:14px;} .bordered th,td{font-size:14px;}
+           .table-title select{font-size:14px;width:7.7em;} 
+           .consearch span input{width:100px;} 
+	       #starttime,#endtime{width:145px;}
+	       #stutas1,#car1,isemp1{min-width:100px;}
+		} 
+		@media screen and (min-width: 1370px) and (max-width: 1500px) { 
+		   .main{width:100%;}.down{width:100%;}
+           .down-left{width:13%;height:76em;}
+           .downrig{width:86.5%;} .table-title{width:100%;}
+           .table-conment{width:98%;} .allcoment{width:100%;}
+           #tableExcel{width:100%;} 
+           .bordered th,td{font-size:14px;}
+           .table-title select{font-size:14px;width:7.7em;}
+           .consearch span input{width:100px;} 
+	       #bigView img{width:250px;height:250px;}
+	       #starttime,#endtime{width:145px;}
+	       #car1,#per1,isemp1{min-width:100px;}
+		} 
+		@media screen and (min-width: 1260px) and (max-width: 1370px) { 
+           .main{width:100%;} .down{width:100%;}
+           .down-left{width:13.5%;height:76em;}
+           .downrig{width:85.5%;} .table-title{width:100%;}
+           .table-conment{width:98%;} .allcoment{width:100%;}
+           #tableExcel{width:100%;} 
+           .bordered th,td{font-size:14px;}
+           .table-title select{font-size:14px;width:7.7em;}
+           .consearch span input{width:100px;} 
+	       #bigView img{width:250px;height:250px;}
+	       #starttime,#endtime{width:145px;}
+	       #car1,#per1,isemp1 {min-width:100px;}
+	       .top-rigtitle{width:23%;}.top-lefttitle{font-size:34px;width:54%;}
+		} 
+		@media screen and (min-width: 1200px) and (max-width: 1260px) { 
+	       .main{width:100%;} .down{width:100%;} .table-title{width:100%;}
+           .down-left{width:13%;height:76.5em;} .downrig{width:86.5%;}
+           .table-conment{width:98%;}  .searchable-select {width:110px;}
+           .allcoment{width:100%;} #tableExcel{width:100%;}
+           *{font-size:13px;} .bordered th,td{font-size:14px;}
+           .table-title select{font-size:14px;width:7.7em;}
+           .consearch span input{width:100px;} 
+	       #bigView img{width:250px;height:250px;} 
+	       #starttime,#endtime{width:145px;}
+	       #car1,#per1,isemp1 {min-width:100px;}
+	       .top-rigtitle{width:24%;}.top-lefttitle{font-size:34px;width:54%;}
+		}
+		@media screen and (min-width: 800px) and (max-width: 1200px) { 
+		   .main{width:100%;min-width:auto;} .er li a{font-size:13px;}
+           .down{width:100%;min-width:auto;height:76.5em;}
+            .top{min-width:auto;} .ce li a{font-size:13px;}
+           .down-left{width:16%;height:76.5em;} .downrig{width:83.5%;}
+           .table-title{width:100%;} .table-conment{width:98%;}
+           .allcoment{width:100%;} .top-lefttitle{font-size:32px;width:54%;}
+           #tableExcel{width:100%;} .bordered th,td{font-size:13px;}
+           .table-title select{font-size:12px;width:8.5em;height:2em;} 
+           .consearch span input{width:100px;} .top-rigtitle{width:24%;}
+	       #bigView img{width:250px;height:250px;}	
+	       #starttime,#endtime{width:145px;} .er .e_li .thr li a{font-size:13px;}
+	        #stutas1,#car1,isemp1{min-width:110px;}
+		}
+		@media screen and (min-width: 400px) and (max-width: 800px) { 
+		   main{width:100%;min-width:auto;} .er .e_li .thr li a{font-size:12px;}
+           .down{width:100%;min-width:auto;} .top{min-width:auto;}
+           .down-left{width:13%;height:76.5em;}.downrig{width:86.5%;} 
+           .table-title{width:100%;}.table-conment{width:98%;}
+           .allcoment{width:100%;} .ce li a{font-size:13px;}
+           #tableExcel{width:100%;} .top-lefttitle{font-size:30px;width:54%;}
+           .bordered th,td{font-size:12px;} .top-rigtitle{width:23%;}
+           .table-title select{font-size:12px;width:8.5em;height:2em;}
+           .consearch span input{width:90px;} .er li a{font-size:12px;}
+	       #bigView img{width:250px;height:250px;}
+	       #starttime,#endtime{width:135px;}
+		} 

@@ -1,0 +1,15 @@
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif;  text-align:center; margin:0 auto; color:#2b2b2b}
+table{border-collapse:collapse;border-spacing:0;}
+
+a{color:#fff;text-decoration:none;font-size:16px;}
+a:hover{color:#c00; text-decoration:underline;}
+
+.box-163css{ width:100%; text-align:left; float:left;}
+.ui-accordion .ui-accordion-header{ padding:0 0 0 21px; font-size:13px; color:#4d6c2f; background:url(common/img/bg01.gif) repeat-x; height:23px; line-height:23px;}
+.edit-list li{ line-height:22px; list-style-type:circle;}
+.ui-state-default .ui-icon{ background:url(common/img/arrow-l.gif) no-repeat 2px 4px;}
+.ui-state-active .ui-icon{ background:url(common/img/arrow-d.gif) no-repeat 0 6px;}

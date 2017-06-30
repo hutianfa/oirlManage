@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="personMobileDao" class="com.ltmcp.mobile.dao.impl.PersonMobileDaoImpl" parent="baseDao"></bean>
+	<!-- id不同20161122 -->
+	<bean id="dbc_BagCodeBindDao" class="com.ltmcp.mobile.dao.impl.Dbc_BagCodeBindDaoImpl" parent="baseDao"></bean>
+	<!-- 20161124 -->
+	<bean id="caseCodeBindDao" class="com.ltmcp.mobile.dao.impl.caseCodeBindBizDaoImpl" parent="baseDao"></bean>
+	
+	<!-- 20161209 -->
+	<bean id="distributionDao" class="com.ltmcp.mobile.dao.impl.DistributionDaoImpl" parent="baseDao"></bean>
+	
+	<!-- 20161225 -->
+	<bean id="excRecordServiceDao" class="com.ltmcp.mobile.dao.impl.ExcRecordServiceDaoImpl" parent="baseDao"></bean>
+	<bean id="shoufa_personServiceDao" class="com.ltmcp.mobile.dao.impl.Shoufa_personServiceDaoImpl" parent="baseDao"></bean>
+	
+	<bean id="carMobileDao" class="com.ltmcp.mobile.dao.impl.CarMobileDaoImpl" parent="baseDao"></bean>
+
+	<bean id="basDictMobileDao" class="com.ltmcp.mobile.dao.impl.BasDictMobileDaoImpl" parent="baseDao"></bean>
+
+
+	<bean id="dimensionalBarCodeMobileDao" class="com.ltmcp.mobile.dao.impl.DimensionalBarCodeMobileDaoImpl" parent="baseDao"></bean>
+
+	<bean id="exrMobileDao" class="com.ltmcp.mobile.dao.impl.ExrMobileDaoHibImpl" parent="baseDao"></bean>
+
+	<bean id="sealedMobileDao" class="com.ltmcp.mobile.dao.impl.SealedMobileDaoImpl" parent="baseDao"></bean>
+	
+	<bean id="freezeMobileDao" class="com.ltmcp.mobile.dao.impl.FreezeMobileDaoImpl" parent="baseDao"></bean>
+
+	<bean id="excRecordMobileDao" class="com.ltmcp.mobile.dao.impl.ExcRecordMobileDaoImpl" parent="baseDao"></bean>
+
+	<bean id="androidVersionMobileDao" class="com.ltmcp.mobile.dao.impl.AndroidVersionMobileDaoImpl" parent="baseDao"></bean>
+	
+	<bean id="positionMobileDao" class="com.ltmcp.mobile.dao.impl.PositionMobileDaoImpl" parent="baseDao"></bean>
+	
+	<bean id="positionExamineUserMobileDao" class="com.ltmcp.mobile.dao.impl.PositionExamineUserMobileDaoImpl" parent="baseDao"></bean>
+	
+	<bean id="positionExamineMobileDao" class="com.ltmcp.mobile.dao.impl.PositionExamineMobileDaoImpl" parent="baseDao"></bean>
+	
+	<bean id="fixSeaFreMobileDao" class="com.ltmcp.mobile.dao.impl.FixSeaFreMobileDaoImpl" parent="baseDao"></bean>
+	
+	<bean id="appErrorMobileDao" class="com.ltmcp.mobile.dao.impl.AppErrorMobileDaoImpl" parent="baseDao"></bean>
+	
+	<bean id="outsourcingMobileDao" class="com.ltmcp.mobile.dao.impl.OutsourcingMobileDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="mailMobileDao" class="com.ltmcp.mobile.dao.impl.MailMobileDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="mobileCommMobileDao" class="com.ltmcp.mobile.dao.impl.MobileCommMobileDaoHibImpl" parent="baseDao"></bean>
+</beans>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="personMobileBiz" class="com.ltmcp.mobile.biz.impl.PersonMobileBizImpl">
+		<property name="personMobileDao" ref="personMobileDao"></property>
+	</bean>
+	<!-- 新增加的20161225 -->
+	<bean id="shoufa_personServiceBiz" class="com.ltmcp.mobile.biz.impl.Shoufa_personServiceBizImpl">
+		<property name="shoufa_personServiceDao" ref="shoufa_personServiceDao"></property>
+	</bean>
+	<!-- 新增加的20161223 -->
+	<bean id="excRecordServiceBiz" class="com.ltmcp.mobile.biz.impl.ExcRecordServiceBizImpl" parent="baseService">
+		<property name="excRecordServiceDao" ref="excRecordServiceDao"></property>
+		<property name="basDictDao" ref="basDictDao"></property>
+		<property name="sealedDao" ref="sealedDao"></property>
+	</bean>
+	<!-- 新增加的20161122-->
+	<bean id="dbc_BagCodeBindBiz" class="com.ltmcp.mobile.biz.impl.Dbc_BagCodeBindBizImpl">
+		<property name="dbc_BagCodeBindDao" ref="dbc_BagCodeBindDao"></property>
+	</bean> 
+	<!-- 新增加的20161124 -->
+	<bean id="caseCodeBindBiz" class="com.ltmcp.mobile.biz.impl.caseCodeBindBizImpl">
+		<property name="caseCodeBindDao" ref="caseCodeBindDao"></property>
+	</bean>
+	
+	<!-- 新增加的20161209 -->
+	<bean id="distributionBiz" class="com.ltmcp.mobile.biz.impl.DistributionBizImpl">
+		<property name="distributionDao" ref="distributionDao"></property>
+	</bean>
+	
+	<bean id="carMobileBiz" class="com.ltmcp.mobile.biz.impl.CarMobileBizImpl">
+		<property name="carMobileDao" ref="carMobileDao"></property>
+		<property name="personMobileDao" ref="personMobileDao"></property>
+	</bean>
+	
+	<bean id="basDictMobileBiz" class="com.ltmcp.mobile.biz.impl.BasDictMobileBizImpl">
+		<property name="basDictMobileDao" ref="basDictMobileDao"></property>
+		<property name="personMobileDao" ref="personMobileDao"></property>
+	</bean>
+	
+	<bean id="wayBillMobileBiz" class="com.ltmcp.mobile.biz.impl.WayBillMobileBizImpl">
+		<property name="carMobileDao" ref="carMobileDao"></property>
+		<property name="dimensionalBarCodeMobileDao" ref="dimensionalBarCodeMobileDao"></property>
+		<property name="personMobileDao" ref="personMobileDao"></property>
+		<property name="sealedMobileDao" ref="sealedMobileDao"></property>
+		<property name="freezeMobileDao" ref="freezeMobileDao"></property>
+		<property name="excRecordMobileDao" ref="excRecordMobileDao"></property>
+	</bean>
+	
+	<bean id="fixBillMobileBiz" class="com.ltmcp.mobile.biz.impl.FixBillMobileBizImpl">
+		<property name="dimensionalBarCodeMobileDao" ref="dimensionalBarCodeMobileDao"></property>
+		<property name="personMobileDao" ref="personMobileDao"></property>
+		<property name="fixSeaFreMobileDao" ref="fixSeaFreMobileDao"></property>
+	</bean>
+	
+	<bean id="androidVersionMobileBiz" class="com.ltmcp.mobile.biz.impl.AndroidVersionMobileBizImpl">
+		<property name="androidVersionMobileDao" ref="androidVersionMobileDao"></property>
+	</bean>
+	
+	<bean id="positionMobileBiz" class="com.ltmcp.mobile.biz.impl.PositionMobileBizImpl">
+		<property name="personMobileDao" ref="personMobileDao"></property>
+		<property name="positionMobileDao" ref="positionMobileDao"></property>
+	</bean>
+	
+	<bean id="positionExamineUserMobileBiz" class="com.ltmcp.mobile.biz.impl.PositionExamineUserMobileBizImpl">
+		<property name="positionExamineUserMobileDao" ref="positionExamineUserMobileDao"></property>
+	</bean>
+	
+	<bean id="positionExamineMobileBiz" class="com.ltmcp.mobile.biz.impl.PositionExamineMobileBizImpl">
+		<property name="positionExamineMobileDao" ref="positionExamineMobileDao"></property>
+		<property name="positionExamineUserMobileBiz" ref="positionExamineUserMobileBiz"></property>
+	</bean>
+	
+	<bean id="saveCodeBiz" class="com.ltmcp.mobile.biz.impl.SaveCodeBizImpl">
+		<property name="dao" ref="dimensionalBarCodeMobileDao"></property>
+	</bean>
+	
+	<!-- 异常信息处理 -->
+	<bean id="exrMobileBiz" class="com.ltmcp.mobile.biz.impl.ExrMobileBizImpl" parent="baseService">
+		<property name="exrMobileDao" ref="exrMobileDao"></property>
+		<property name="personMobileDao" ref="personMobileDao"></property>	
+	</bean>
+	
+	
+	<bean id="appErrorMobileBiz" class="com.ltmcp.mobile.biz.impl.AppErrorMobileBizImpl">
+		<property name="appErrorMobileDao" ref="appErrorMobileDao"></property>
+	</bean>
+	<!-- 外够客户查询运单信息 -->
+	<bean id="outsourcingMobileBiz" class="com.ltmcp.mobile.biz.impl.OutsourcingMobileBizImple">
+		<property name="outsourcingMobileDao" ref="outsourcingMobileDao"></property>
+	</bean>
+	
+		
+	<!-- mail -->
+	<bean id="mailMobileBiz" class="com.ltmcp.mobile.biz.impl.MailMobileBizImpl">
+		<property name="mailMobileDao" ref="mailMobileDao"></property>
+	</bean>
+	
+	<!-- 获取公共信息 -->
+	<bean id="mobileCommMobileBiz" class="com.ltmcp.mobile.biz.impl.MobileCommMobileBizImpl">
+		<property name="mobileCommMobileDao" ref="mobileCommMobileDao"></property>
+	</bean>
+</beans>

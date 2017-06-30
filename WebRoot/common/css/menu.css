@@ -1,0 +1,34 @@
+ @charset "utf-8";
+	*{margin:0px;padding:0px;} .down-left{background-color:#1e71b1;}/*  #035392 */
+	html,body{height:100%;}li{list-style-type:none;}
+	img{border:0px;vertical-align:middle;}.ce li a img{float:right;}
+	a{text-decoration:none;outline:none;blr:expression(this.onFocus=this.blur());}
+	a:hover{text-decoration:none;outline:none;} .clear{clear:both;}
+	/*外层盒子  */ 
+	.ce{display:block;width:100%;background:#1e71b1;top:0px;left:0px;}
+	.ce li{border-bottom: 1px solid rgb(236,229,229);border-top: 1px solid rgb(90,90,90);}
+	.ce li a{padding: 10px 10px 10px 10px;color:white;display:block;cursor:pointer;no-repeat 10px center;}
+	.ce li a:hover{background:url() no-repeat 10px center rgb(190,51,51);}
+	.ce li .dqian{background:none} .more{margin-left: 26px;} .ce li .xz{background:rgb(190,51,51);}
+	/*二级展开列表  */
+	.er{display:none;width:100%;background:rgb(120,120,120);}
+	.er li{width:100%;border:solid rgb(140,140,140);border-width:1px 0px 0px;}
+	.er li a{display:block;padding:10px 10px 9px 25px;color:white;background:none;font-size: 15px;}
+	.er .e_li a{background:url() no-repeat 236px center;}
+	.er li a:hover,.er li .sen_x{background:rgb(253,83,49);}
+	.er .e_li a:hover,.er .e_li .sen_x{background:url() no-repeat 2360px  rgb(253,83,49);}
+	/* 三级展开列表 */
+	.thr{background:rgb(150,150,150);display:none;}
+	.thr li{margin-bottom:1px;border-top: 1px solid rgb(180,180,180);position:relative;}
+	.er .e_li .thr li a{background:none;padding-left:40px;}
+	.er .e_li .thr li a:hover{background:rgb(249,152,49);}
+	.er .e_li .thr li .xuan{background:rgb(249,152,49);}
+	.thr_nr{width:100%;position:absolute;top:0px;left:150px;z-index:10;border:1px solid rgb(201,201,201);display:none;}
+	.thr_nr h3{font-weight:normal;font-size:18px;display:block;text-align:center;width:100%;padding:10px 0px;}
+	.thr_nr img{width:100%;}
+	.ti {width: 29px;height:29px;float: left;padding-top: 3px;cursor: pointer;text-align: center;margin-right: 10px;margin-top:40px;margin-left:20px;background: url(../images/11.png) no-repeat;}
+	.inpu {cursor: pointer;filter:alpha(opacity=0);-moz-opacity:0; opacity:0;width:29px;height:29px;}
+	.span{float:left;display:block;padding:4px 40px 0px 0px;color:#000;}
+	.tu1{width: 29px;height:29px;float: left;padding-top: 3px;cursor: pointer;text-align: center;margin-right: 10px;margin-top:40px;margin-left:20px;background:url(../images/22.png) no-repeat;}
+	.span1{color:#f00;float:left;display:block;padding:4px 40px 0px 0px;} .span2{color:#000;}
+	

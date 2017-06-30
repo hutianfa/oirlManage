@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ltmcp.entity.FixedSeal" table="fixed_seal">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="company" type="java.lang.Integer">
+            <column name="company" />
+        </property>
+        
+        <property name="areaid" type="java.lang.Integer">
+            <column name="areaid" />
+        </property>
+        
+        <property name="seaSign" type="java.lang.String">
+            <column name="sealed_sign" />
+        </property>               
+        <property name="freSign" type="java.lang.String">
+            <column name="freeze_sign" />
+        </property>
+        
+        <property name="seaCode" type="java.lang.String">
+            <column name="sealed_code" />
+        </property>
+        <property name="freCode" type="java.lang.String">
+            <column name="freeze_code" />
+        </property>
+        
+        <property name="seaTip" type="java.lang.String">
+            <column name="sealed_tips" />
+        </property>
+        <property name="freTip" type="java.lang.String">
+            <column name="freeze_tips" />
+        </property>
+        
+        <property name="seaPosi" type="java.lang.String">
+            <column name="sealed_posi" />
+        </property>
+        <property name="frePosi" type="java.lang.String">
+            <column name="freeze_posi" />
+        </property>
+        
+         <property name="seaName" type="java.lang.String">
+            <column name="sealed_per_name" />
+        </property>
+         <property name="freName" type="java.lang.String">
+            <column name="freeze_per_name" />
+        </property>
+        
+        <property name="seaTime" type="java.sql.Timestamp">
+            <column name="sealed_time" />
+        </property>
+        <property name="freTime" type="java.sql.Timestamp">
+            <column name="freeze_time"/>
+        </property>
+
+
+
+        <property name="plateNumber" type="java.lang.String">
+            <column name="plateNumber"/>
+        </property>
+        <property name="fixStatus" type="java.lang.Integer">
+            <column name="fix_status" />
+        </property>
+    </class>
+</hibernate-mapping>

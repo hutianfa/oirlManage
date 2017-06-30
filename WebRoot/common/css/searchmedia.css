@@ -1,0 +1,15 @@
+  @media screen and (min-width: 768px) and (max-width: 1260px) { 
+     .seachleft{width:75%;} 
+     .seachrig{width:22%;}
+     .seachleft span input#loc,#name,#seadname,#freename,#posName{width:120px;}
+  }
+   @media screen and (min-width:1260px) and (max-width: 1600px){
+     .seachleft{width:75%;} 
+     .seachrig{width:22%;}
+     .seachleft span input#loc,#name,#seadname,#freename,#posName{width:120px;}
+   }
+   @media screen and (min-width:1600px) and (max-width: 1920px) { 
+     .seachleft{width:65%;}
+     .seachrig{width:31%;}
+     .seachleft span input#loc,#name{width:140px;}
+   }

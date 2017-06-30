@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 人员管理 -->
+	<bean id="personMobileAction" class="com.ltmcp.mobile.action.PersonMobileAction" scope="prototype" parent="baseAction">
+		<property name="personMobileBiz" ref="personMobileBiz"></property>
+	</bean>
+	
+	<!-- 异常管理 -->
+	<bean id="exrMobileAction" class="com.ltmcp.mobile.action.ExrMobileAction" scope="prototype" parent="baseAction">
+		<property name="exrMobileBiz" ref="exrMobileBiz"></property>
+	</bean>
+	
+	<bean id="carMobileAction" class="com.ltmcp.mobile.action.CarMobileAction" scope="prototype" parent="baseAction">
+		<property name="carMobileBiz" ref="carMobileBiz"></property>
+		<property name="personMobileBiz" ref="personMobileBiz"></property>
+	</bean>
+	
+	<bean id="basDictMobileAction" class="com.ltmcp.mobile.action.BasDictMobileAction" scope="prototype" parent="baseAction">
+		<property name="basDictMobileBiz" ref="basDictMobileBiz"></property>
+	</bean>
+	
+	<bean id="wayBillMobileAction" class="com.ltmcp.mobile.action.WayBillMobileAction" scope="prototype" parent="baseAction">
+		<property name="wayBillMobileBiz" ref="wayBillMobileBiz"></property>
+	</bean>
+
+	<bean id="fixSeaFreMobileAction" class="com.ltmcp.mobile.action.FixSeaFreMobileAction" scope="prototype" parent="baseAction">
+		<property name="wayBillMobileBiz" ref="wayBillMobileBiz"></property>
+		<property name="fixBillMobileBiz" ref="fixBillMobileBiz"></property>
+	</bean>
+	
+	<bean id="androidVersionMobileAction" class="com.ltmcp.mobile.action.AndroidVersionMobileAction" scope="prototype" parent="baseAction">
+		<property name="androidVersionMobileBiz" ref="androidVersionMobileBiz"></property>
+	</bean>
+	
+	<bean id="positionMobileAction" class="com.ltmcp.mobile.action.PositionMobileAction" scope="prototype">
+		<property name="positionMobileBiz" ref="positionMobileBiz"></property>
+	</bean>
+	
+	<bean id="positionExamineUserMobileAction" class="com.ltmcp.mobile.action.PositionExamineUserMobileAction" scope="prototype">
+		<property name="positionExamineUserMobileBiz" ref="positionExamineUserMobileBiz"></property>
+	</bean>
+	
+	<bean id="positionExamineMobileAction" class="com.ltmcp.mobile.action.PositionExamineMobileAction" scope="prototype">
+		<property name="positionExamineMobileBiz" ref="positionExamineMobileBiz"></property>
+	</bean>
+	
+	<bean id="saveCodeAction" class="com.ltmcp.mobile.action.SaveCodeAction" scope="prototype" parent="baseAction">
+		<property name="saveCode" ref="saveCodeBiz"></property>
+		<property name="dao" ref="dimensionalBarCodeMobileDao"></property>
+		<property name="dbcbcheck" ref="dbc_BagCodeBindBiz"></property>
+		<property name="dbcheckdao" ref="dbc_BagCodeBindDao"></property>
+		<property name="caseCodeBindBiz" ref="caseCodeBindBiz"></property>
+		<property name="caseCodeBindDao" ref="caseCodeBindDao"></property>
+	</bean>
+   <!-- 新增加的分发action -->
+   <bean id="distributionAction" class="com.ltmcp.mobile.action.DistributionAction" scope="prototype" parent="baseAction">
+   	   <property name="shoufa_personServiceBiz" ref="shoufa_personServiceBiz"></property>
+       <property name="distributionBiz" ref="distributionBiz"></property>
+       <property name="excRecordAction" ref="excRecordAction"></property>
+       <property name="excRecordActionAp" ref="excRecordActionAp"></property>
+   </bean>
+   <!-- 新增加的异常action -->
+   <bean id="excRecordActionAp" class="com.ltmcp.mobile.action.ExcRecordActionAp" scope="prototype" parent="baseAction">
+       <property name="excRecordServiceBiz" ref="excRecordServiceBiz"></property>
+       <property name="distributionBiz" ref="distributionBiz"></property>
+   </bean>
+   
+	<bean id="appErrorMobileAction" class="com.ltmcp.mobile.action.AppErrorMobileAction" scope="prototype" parent="baseAction">
+		<property name="appErrorMobileBiz" ref="appErrorMobileBiz"></property>
+	</bean>
+
+	
+	<bean id="appLogAction" class="com.ltmcp.mobile.action.AppLogAction" scope="prototype" parent="baseAction">
+	
+	</bean>
+	
+	<bean id="outsourcingMobileAction" class="com.ltmcp.mobile.action.OutsourcingMobileAction" scope="prototype" parent="baseAction">
+		<property name="outsourcingMobileBiz" ref="outsourcingMobileBiz"></property>
+	</bean>
+	
+	<!-- 邮件发送数据获取-->	
+	<bean id="mailMobileAction" class="com.ltmcp.mobile.action.MailMobileAction" scope="prototype" parent="baseAction">
+		<property name="mailMobileBiz" ref="mailMobileBiz"></property>
+	</bean>
+	
+	<!-- 公共信息获取类-->	
+	<bean id="mobileCommAction" class="com.ltmcp.mobile.action.MobileCommAction" scope="prototype" parent="baseAction">
+		<property name="mobileCommMobileBiz" ref="mobileCommMobileBiz"></property>
+	</bean>
+</beans>

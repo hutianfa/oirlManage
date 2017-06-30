@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 配置内容输入输出编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.locale" value="zh_CN" />
+	<!-- 配置源 -->
+	<!-- <constant name="struts.custom.i18n.resources" value="apply"></constant> -->
+
+
+	<!-- 登录管理 -->
+	<package name="loginManager" extends="struts-default" namespace="/">
+		<action name="doLogin" class="adminAction" method="doLogin">
+			<result name="success" type="redirectAction">
+				<param name="actionName">main</param>
+			</result>
+			<result name="input" type="redirectAction">
+				<param name="actionName">login</param>
+			</result>
+		</action>
+		<action name="main" class="adminAction" method="main">
+			<result type="dispatcher">/index.jsp</result>
+		</action>
+
+		<action name="login">
+			<result>/login.jsp</result>
+		</action>
+		<action name="exit" class="adminAction" method="logout">
+			<result type="redirectAction">
+				<param name="actionName">login</param>
+			</result>
+		</action>
+
+		<!-- 普通管理员页面 -->
+		<action name="admin_listGeneralManager" class="adminAction" method="listGeneralManager">
+			<result type="dispatcher" name="success">jsp/listGeneralManager.jsp
+			</result>
+		</action>
+
+		<!-- 普通管理员删除 -->
+		<action name="del_GeneralManager" class="adminAction" method="delGeneralManager"></action>
+
+		<!-- 添加普通管理员 -->
+		<action name="add_GeneralManager" class="adminAction" method="addGeneralManager">
+			<result name="toList" type="redirectAction">
+				<param name="actionName">admin_listGeneralManager</param>
+			</result>
+		</action>
+
+		<!-- 修改管理员密码 -->
+		<action name="updatepwd" class="adminAction" method="updatepwd">
+			<result type="dispatcher" name="success">/updatePwd.jsp</result>
+		</action>
+		<action name="updatePwd" class="adminAction" method="updatePwd">
+		</action>
+
+	</package>
+
+	<!--订单管理:厂家到二级分公司  ，并且要在数据库中power中配置order_*的请求方法,例如：增加订单的方法：order_add要把order_add配置在数据库的power表中才能进行web端的访问-->
+	<package name="firstOrderManager" extends="struts-default" namespace="/">
+		<action name="order_*" class="firstOrderAction" method="{1}">
+			<!--  全部传输到的数据为json的格式，传递对象可以试一试<result name="list" type="dispatcher">jsp/payOrderList.jsp</result>-->
+			<result name="list" type="dispatcher">jsp/payOrderList.jsp</result>
+		</action>
+	</package>
+	
+	<!--库存查询-->
+	<package name="inventoryManager" extends="struts-default" namespace="/">
+		<action name="inventory_*" class="inventoryAction" method="{1}">
+			<!--查询方法：inventory_Query_The_Inventory（一定注意加入power方法）-->
+			<result name="queryTheInventory" type="dispatcher">jsp/stoDataStaticList.jsp</result>
+			<result name="queryTheCompany" type="dispatcher">jsp/stoDataStaticList.jsp</result><!--inventory_queryTheCompany -->
+		</action>
+	</package>
+	
+	<!-- 运单管理 -->
+	<package name="waybillManager" extends="struts-default" namespace="/">
+		<action name="waybill_*" class="handleWaybill" method="{1}">
+			<result name="list" type="dispatcher">jsp/waybillList.jsp</result>
+			<result name="detailed" type="dispatcher">jsp/waybillDetail.jsp</result>
+			<result name="tonowlist" type="dispatcher">jsp/realTimeSeaWaybill.jsp</result>
+		</action>
+	</package>
+
+	<!-- 车辆管理 -->
+	<package name="carManager" extends="struts-default" namespace="/">
+		<action name="car_*" class="carAction" method="{1}">
+			<result name="list" type="dispatcher">jsp/carList.jsp</result>
+			<result name="detailed" type="dispatcher">jsp/carDetail.jsp</result>
+			<result name="tolist" type="redirectAction">
+				<param name="actionName">car_list</param>
+			</result>
+		</action>
+	</package>
+
+
+
+	<!-- 人员管理 -->
+	<package name="personManager" extends="struts-default" namespace="/">
+		<action name="person_*" class="personAction" method="{1}">
+			<result name="detailed" type="dispatcher">jsp/personDetail.jsp</result>
+			<result name="list" type="dispatcher">jsp/personList.jsp</result>
+			<result name="tolist" type="redirectAction">
+				<param name="actionName">person_list</param>
+			</result>
+		</action>
+	</package>
+	
+	
+	<!-- 图片管理 -->
+	<package name="photoManager" extends="struts-default" namespace="/">
+		<action name="photo_*" class="photoAction" method="{1}">
+			<result name="photolist" type="dispatcher">jsp/waybillAuditList.jsp</result>
+			<result name="reportList" type="dispatcher">jsp/photoReport.jsp</result>
+		</action>
+	</package>
+	
+	
+	
+
+	<!-- 位置管理 -->
+	<package name="compayManager" extends="struts-default" namespace="/">
+		<action name="company_*" class="companyAction" method="{1}">
+		</action>
+	</package>
+
+	<!-- 位置管理 -->
+	<package name="positionManager" extends="struts-default" namespace="/">
+		<action name="position_*" class="positionAction" method="{1}">
+			<result name="detailed" type="dispatcher">jsp/positionDetail.jsp</result>
+			<result name="list" type="dispatcher">jsp/positionList.jsp</result>
+			<result name="tolist" type="redirectAction">
+				<param name="actionName">position_list</param>
+			</result>
+			<result name="success" type="dispatcher" >jsp/bundList.jsp</result>
+		</action>
+
+		<action name="positionExamine_*" class="positionExamine" method="{1}">
+			<result name="list" type="dispatcher">jsp/positionExamineList.jsp</result>
+			<result name="detailed" type="dispatcher">jsp/positionExamineDetail.jsp
+			</result>
+		</action>
+
+		<action name="positionExamineUser_*" class="positionExamineUser" method="{1}">
+			<result name="list" type="dispatcher">jsp/positionExamineSucList.jsp
+			</result>
+		</action>
+
+
+
+	</package>
+
+	<!-- 异常管理 -->
+	<package name="excRecordManager" extends="struts-default" namespace="/">
+		<action name="excRecord_*" class="excRecordAction" method="{1}">
+			<result name="list" type="dispatcher">jsp/excRecordList.jsp</result>
+			<result name="detailed" type="dispatcher">jsp/excRecordDetail.jsp</result>
+		</action>
+		<action name="excRecord_queryExcParcent" class="excRecordAction" method="queryExcParcent">
+			<result type="dispatcher" name="success">jsp/excRecordExport.jsp
+			</result>
+		</action>
+		<action name="excRecord_allHasHandle" class="excRecordAction" method="allHasHandle">
+			<result type="dispatcher" name="success">jsp/excRecordDealhas.jsp
+			</result>
+		</action>
+		<action name="excRecord_allHasillegality" class="excRecordAction" method="allHasillegality">
+			<result type="dispatcher" name="success">jsp/excRecordDealhas.jsp
+			</result>
+		</action>
+		<action name="excRecord_queryTimeOut" class="excRecordAction" method="queryTimeOut">
+			<result type="dispatcher" name="list">jsp/excRcordTime.jsp</result>
+		</action>
+
+	</package>
+
+
+	<!-- 报表管理 -->
+	<package name="reportFormManager" extends="struts-default"
+		namespace="/">
+		<!-- 查看报表详细信息 
+		<action name="reportForm_*" class="reportForm" method="{1}">
+			<result name="list" type="dispatcher">jsp/reportFormList.jsp</result>
+		</action>-->
+		<action name="reportForm_*" class="reportForm" method="{1}">
+			<result name="list" type="dispatcher">jsp/payOrderList.jsp</result>
+			<result name="success" type="dispatcher">jsp/outStorageList.jsp</result>
+			<result name="detailed" type="dispatcher">jsp/inStorageList.jsp</result>
+			<result name="tonowlist" type="dispatcher">jsp/stoDataStaticList.jsp</result>
+			<!-- <result name="inarea" type="dispatcher">jsp/inAreaStorageList.jsp</result>
+			<result name="inoil" type="dispatcher">jsp/inOilStorageList.jsp</result> -->
+			<result name="instation" type="dispatcher">jsp/AppointStorageList.jsp</result>
+			<!-- <result name="outarea" type="dispatcher">jsp/outAreaStorageList.jsp</result> -->
+			<result name="tjlist" type="dispatcher">jsp/typeDataStaticList.jsp</result>	
+			<!-- <result name="outoil" type="dispatcher">jsp/outOilStorageList.jsp</result> -->	
+		</action>
+	</package>
+
+	<!-- 加载struts-mobile.xml -->
+	<include file="struts-mobile.xml"></include>
+	
+	<!-- 错误页面管理 -->
+	<package name="errorPageManager" namespace="/" extends="struts-default">
+		<!-- 定义全局错误配置 -->
+		<global-results>
+			<result name="error" type="httpheader">
+				<param name="error">404</param>
+			</result>
+		</global-results>
+
+		<!-- 异常映射 -->
+		<global-exception-mappings>
+			<exception-mapping result="error" exception="java.lang.Exception"></exception-mapping>
+			<exception-mapping result="error" exception="java.lang.Error"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+	
+	
+	
+	
+	
+	<!-- 授权管理 -->
+	<package name="powerManager" extends="struts-default" namespace="/">
+		<action name="empower_*" class="empowerAction" method="{1}">
+			<result name="Alllist" type="dispatcher">jsp/EmpowerList.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 封签出入库管理 -->
+	<package name="thingManager" extends="struts-default" namespace="/">
+		<action name="thing_*" class="thingsAction" method="{1}">
+			<result name="Allthing" type="dispatcher">jsp/signManagement.jsp</result>
+		</action>
+	</package>
+	
+	
+	<!-- 效益之星-->
+	<package name="reporManager" extends="struts-default" namespace="/">
+		<action name="report_*" class="benefitAction" method="{1}">
+		   <result name="Benefitlist" type="dispatcher">jsp/BenefitStarList.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 安全之星-->
+	<package name="safeManager" extends="struts-default" namespace="/">
+		<action name="safe_*" class="safeAction" method="{1}">
+			<result name="Seculist" type="dispatcher">jsp/SecuStarList.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 效率之星-->
+	<package name="efficiencyManager" extends="struts-default" namespace="/">
+		<action name="effic_*" class="efficiencyAction" method="{1}">
+			<result name="efficlist" type="dispatcher">jsp/EfficiencyStarList.jsp</result> 
+		</action>
+	</package>
+	
+	
+	<!-- 固定封签-->
+	<package name="fixManager" extends="struts-default" namespace="/">
+		<action name="fixSea_*" class="fixAction" method="{1}">
+			<result name="list" type="dispatcher">jsp/fixSignList.jsp</result>
+		</action>
+	</package>
+	
+	<!-- web-->
+	<package name="insertManager" extends="struts-default" namespace="/">
+		<action name="in_*" class="insertAction" method="{1}">
+			<result name="list" type="dispatcher">jsp/noteglibList.jsp</result>
+		</action>
+	</package>
+	
+	<!-- banben-->
+	<package name="appNumAction" extends="struts-default" namespace="/">
+		<action name="appNum_*" class="appNumAction" method="{1}">
+ 			<result name="list" type="dispatcher">jsp/AppUpdateMessage.jsp</result>
+		</action>
+	</package>	
+</struts>    

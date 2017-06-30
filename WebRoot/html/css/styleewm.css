@@ -1,0 +1,2421 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+	color: #333
+}
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+fieldset,
+img {
+	border: 0
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var,
+i,
+s {
+	font-style: normal;
+	font-weight: normal
+}
+li {
+	list-style: none
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal
+}
+input[type=checkbox] {
+	vertical-align: middle;
+	margin-top: -1px
+}
+body,
+button,
+select,
+textarea,
+input {
+	font-family: Microsoft YaHei, Tahoma, SimSun, Verdana;
+	font-size: 12px;
+	line-height: 1.5
+}
+button {
+	white-space: nowrap;
+	overflow: visible
+}
+a {
+	text-decoration: none;
+	outline: 0
+}
+a:hover {
+	text-decoration: none
+}
+a:active {
+	outline: 0
+}
+a:focus {
+	-moz-outline-style: none
+}
+em {
+	font-style: normal
+}
+.clearfix:before,
+.clearfix:after {
+	content: '.';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0
+}
+.clearfix:after {
+	clear: both
+}
+.pageWrap {
+	margin: 0 auto;
+	width: 100%
+}
+.poswrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: -webkit-transform 1s ease;
+	-moz-transition: -moz-transform 1s ease;
+	-o-transition: -o-transform 1s ease;
+	transition: transform 1s ease
+}
+.w994 {
+	width: 994px;
+	margin: 0 auto
+}
+.opbg {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 76px;
+	background: #fff;
+	opacity: .2;
+	z-index: 1;
+	filter: alpha(opacity=20)
+}
+.topbar {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 994px;
+	margin: 0 0 0 -497px;
+	z-index: 100
+}
+.qlogo {
+	float: left;
+	width: 123px
+}
+.qlogo a {
+	display: block;
+	width: 123px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 76px;
+	font-size: 0;
+	background: transparent url("http://im-img.qq.com/home/img/q2013/qlogo.png") no-repeat left 12px
+}
+.snav,
+.flashData {
+	height: 23px;
+	text-align: right;
+	line-height: 23px
+}
+.snav {
+	padding-top: 16px
+}
+.snav a:link,
+.snav a:visited {
+	color: #fff
+}
+.snav span {
+	padding: 0 5px;
+	color: #fff
+}
+.flashData a {
+	padding-left: 25px;
+	background: transparent url("http://im-img.qq.com/home/img/q2013/xymap.png") no-repeat left center
+}
+.flashData a:link,
+.flashData a:visited {
+	color: #fff
+}
+.flashData a:hover {
+	text-decoration: underline
+}
+.ipage {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 720px;
+	overflow: hidden
+}
+.haswheel {
+	overflow: hidden
+}
+.haswheel #bgimg,
+.haswheel .bnwrap,
+.haswheel .bgbanner,
+.haswheel .modInner,
+.haswheel .ipage {
+	height: 100%;
+	min-height: 720px
+}
+#bgimg {
+	width: 100%;
+	height: 720px
+}
+.bnwrap {
+	position: relative;
+	width: 994px;
+	height: 720px;
+	margin: 0 auto;
+	z-index: 40
+}
+.bg-1 .bn-1 {
+	display: block
+}
+.bg-2 .bn-2 {
+	display: block
+}
+.bg-3 .bn-3 {
+	display: block
+}
+.bg-4 .bn-4 {
+	display: block
+}
+.bg-5 .bn-5 {
+	display: block
+}
+.bgbanner {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 720px;
+	z-index: 10
+}
+.bgarea,
+.bgarea ul,
+.bgarea li {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+.bgarea {
+	overflow: hidden;
+	z-index: 5
+}
+.bgarea li {
+	z-index: 0;
+	text-align: center
+}
+.bgarea li.cur {
+	z-index: 1
+}
+.bgarea li img {
+	max-width: 100%;
+	width: 100%;
+	height: auto
+}
+.bnav {
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+	width: 100px;
+	margin-left: -50px;
+	z-index: 20
+}
+.bnav li {
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-right: 8px;
+	font-size: 0;
+	line-height: 0;
+	background: transparent url("http://im-img.qq.com/pcqq/img/nor.png") no-repeat 0 0
+}
+.bnav li.current {
+	background: transparent url("http://im-img.qq.com/pcqq/img/cur.png") no-repeat 0 0
+}
+.animate-1,
+.animate-2,
+.animate-3,
+.animate-4,
+.animate-5 {
+	position: absolute;
+	width: 568px;
+	height: 300px;
+	left: 21px;
+	top: 50%;
+	margin-top: -150px
+}
+.animate-2 {
+	width: 519px;
+	height: 300px
+}
+.animate-4 {
+	width: 538px;
+	height: 341px;
+	margin-top: -170px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f4_cloud.png") no-repeat 0 0
+}
+.animate-5 {
+	position: relative;
+	width: 568px;
+	height: 274px;
+	margin-top: -137px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/share_s.png") no-repeat 0 0
+}
+.heads {
+	position: absolute;
+	left: 53px;
+	top: 212px;
+	width: 117px;
+	height: 62px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/heads_s.png") no-repeat 0 0
+}
+.f1_pc,
+.f2_pc,
+.f3_pc,
+.f4_pc {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 350px;
+	height: 272px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f1_pc.png") no-repeat 0 0
+}
+.f1_mp,
+.f2_mp,
+.f3_mp,
+.f4_mp {
+	position: absolute;
+	left: 447px;
+	top: 29px;
+	width: 118px;
+	height: 243px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f1_mp.png") no-repeat 0 0
+}
+.f1_mp {
+	left: 427px
+}
+.f1_file {
+	position: absolute;
+	left: 285px;
+	top: 144px;
+	width: 180px;
+	height: 138px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f1_file_1.png") no-repeat 0 0
+}
+.f1_ani,
+.f4_ani {
+	position: absolute;
+	left: 412px;
+	top: 233px;
+	width: 60px;
+	height: 60px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f1_animate.png") no-repeat 0 0
+}
+.f1_s_a {
+	width: 139px;
+	height: 91px;
+	overflow: hidden;
+	margin: 90px 0 0 135px;
+	background: #fff
+}
+.f1_s {
+	width: 139px;
+	height: 91px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f1_pc.png") no-repeat -135px -90px
+}
+.f1_s_m {
+	width: 98px;
+	height: 65px;
+	overflow: hidden;
+	margin: 77px 0 0 10px;
+	background: #cbe9fb
+}
+.f1_m {
+	width: 98px;
+	height: 65px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f1_mp.png") no-repeat -10px -77px
+}
+.haswheel .f1_s,
+.haswheel .f1_m,
+.haswheel .f4_pc1,
+.haswheel .f4_pc2,
+.haswheel .f4_pc3 {
+	opacity: 0
+}
+.haswheel .pcs-1,
+.haswheel .pcs-2,
+.haswheel .pcs-3,
+.haswheel .mps-1 {
+	opacity: 1
+}
+.f2_s_a {
+	width: 236px;
+	height: 118px;
+	overflow: hidden;
+	margin: 0
+}
+.f2_a {
+	width: 236px;
+	height: 118px
+}
+.f2_s_m {
+	width: 100px;
+	height: 149px;
+	overflow: hidden
+}
+.f2_m {
+	width: 100px;
+	height: 149px
+}
+.pcs-1 {
+	-webkit-animation: easeIn .5s linear 1s;
+	-moz-animation: easeIn .5s linear 1s;
+	-o-animation: easeIn .5s linear 1s;
+	animation: easeIn .5s linear 1s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.pcs-2 {
+	-webkit-animation: easeIn .5s linear 2.5s;
+	-moz-animation: easeIn .5s linear 2.5s;
+	-o-animation: easeIn .5s linear 2.5s;
+	animation: easeIn .5s linear 2.5s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.pcs-3 {
+	-webkit-animation: easeIn .5s linear 4.2s;
+	-moz-animation: easeIn .5s linear 4.2s;
+	-o-animation: easeIn .5s linear 4.2s;
+	animation: easeIn .5s linear 4.2s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.rotate-1 {
+	-webkit-animation: rotation 1s linear 2s;
+	-moz-animation: rotation 1s linear 2s;
+	-o-animation: rotation 1s linear 2s;
+	animation: rotation 1s linear 2s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.rotate-2 {
+	-webkit-animation: rotation 1.5s linear 1.5s 3;
+	-moz-animation: rotation 1.5s linear 1.5s 3;
+	-o-animation: rotation 1.5s linear 1.5s 3;
+	animation: rotation 1.5s linear 1.5s 3
+}
+.mps-0 {
+	-webkit-animation: easeIn .5s linear 2s;
+	-moz-animation: easeIn .5s linear 2s;
+	-o-animation: easeIn .5s linear 2s;
+	animation: easeIn .5s linear 2s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.mps-1 {
+	-webkit-animation: easeIn .5s linear 3s;
+	-moz-animation: easeIn .5s linear 3s;
+	-o-animation: easeIn .5s linear 3s;
+	animation: easeIn .5s linear 3s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.mps-2 {
+	-webkit-animation: easeIn .5s linear 3s;
+	-moz-animation: easeIn .5s linear 3s;
+	-o-animation: easeIn .5s linear 3s;
+	animation: easeIn .5s linear 3s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.mps-3 {
+	-webkit-animation: easeIn .5s linear 5s;
+	-moz-animation: easeIn .5s linear 5s;
+	-o-animation: easeIn .5s linear 5s;
+	animation: easeIn .5s linear 5s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.movetop {
+	-webkit-animation: moveTop 1.8s ease 1s infinite;
+	-moz-animation: moveTop 1.8s ease 1s infinite;
+	-o-animation: moveTop 1.8s ease 1s infinite;
+	animation: moveTop 1.8s ease 1s infinite;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.easeout {
+	-webkit-animation: easeOut .8s ease 2s;
+	-moz-animation: easeOut .8s ease 2s;
+	-o-animation: easeOut .8s ease 2s;
+	animation: easeOut .8s ease 2s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.haswheel .movetop {
+	-webkit-transform: translateY(-85px);
+	transform: translateY(-85px)
+}
+.rotate {
+	animation: rotation 2s linear 1s infinite;
+	-webkit-animation: rotation 2s linear 1s infinite
+}
+.roteslow {
+	animation: roteslow 5s linear 1s infinite;
+	-webkit-animation: roteslow 5s linear 1s infinite
+}
+.f2_pc {
+	background-image: url("http://im-img.qq.com/pcqq/img/f2_pc.png")
+}
+.f2_mp {
+	left: 400px;
+	top: 29px;
+	background-image: url("http://im-img.qq.com/pcqq/img/f2_mp.png")
+}
+.f3_pc {
+	left: 217px;
+	background-image: url("http://im-img.qq.com/pcqq/img/f3_pc.png")
+}
+.f3_mp {
+	left: 0;
+	top: 29px;
+	background-image: url("http://im-img.qq.com/pcqq/img/f3_mp.png");
+	z-index: 500
+}
+.f3_pshow {
+	width: 334px;
+	height: 105px;
+	margin: 8px 0 0 8px;
+	background: #66b2e1
+}
+.haswheel .f3_pshow {
+	opacity: 1
+}
+.haswheel .easeout {
+	opacity: 0
+}
+.f3_p1 {
+	position: absolute;
+	left: 69px;
+	top: 28px;
+	width: 61px;
+	height: 61px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/1.png") no-repeat 0 0
+}
+.f3_p2 {
+	position: absolute;
+	left: 101px;
+	top: -31px;
+	width: 61px;
+	height: 61px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/2.png") no-repeat 0 0
+}
+.f3_p3 {
+	position: absolute;
+	left: 125px;
+	top: -84px;
+	width: 75px;
+	height: 75px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/3.png") no-repeat 0 0
+}
+.f3_p4 {
+	position: absolute;
+	left: 201px;
+	top: -128px;
+	width: 77px;
+	height: 77px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/4.png") no-repeat 0 0
+}
+.f3_p5 {
+	position: absolute;
+	left: 258px;
+	top: -156px;
+	width: 117px;
+	height: 117px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/5.png") no-repeat 0 0
+}
+.f3_p6 {
+	position: absolute;
+	left: 345px;
+	top: -113px;
+	width: 108px;
+	height: 108px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/6.png") no-repeat 0 0
+}
+.f3_p7 {
+	position: absolute;
+	left: 418px;
+	top: -47px;
+	width: 116px;
+	height: 116px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/7.png") no-repeat 0 0
+}
+.haswheel .f3_mp div {
+	opacity: 0
+}
+.bg-3 .f3_mp div {
+	opacity: 1
+}
+.f4_pc {
+	left: 94px;
+	top: 158px;
+	width: 180px;
+	height: 149px;
+	background-image: url("http://im-img.qq.com/pcqq/img/f4_pc.png")
+}
+.f4_mp {
+	left: 379px;
+	top: 176px;
+	width: 68px;
+	height: 133px;
+	background-image: url("http://im-img.qq.com/pcqq/img/f4_mp.png")
+}
+.f4_ps {
+	position: relative;
+	width: 138px;
+	height: 67px;
+	margin: 36px 0 0 21px;
+	overflow: hidden;
+	background: #fff
+}
+.f4_mps {
+	position: relative;
+	width: 62px;
+	height: 93px;
+	margin: 20px 0 0 3px;
+	overflow: hidden;
+	background: #ace1ff
+}
+.f4_pc1 {
+	position: absolute;
+	left: 0;
+	top: 8px;
+	width: 82px;
+	height: 16px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f4_pc.png") no-repeat -21px -44px
+}
+.f4_pc2,
+.f4_pc3 {
+	position: absolute;
+	right: 0;
+	top: 32px;
+	width: 72px;
+	height: 16px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f4_pc.png") no-repeat -87px -68px
+}
+.f4_pc3 {
+	top: 56px
+}
+.f4_mp1 {
+	position: absolute;
+	left: 0;
+	top: 9px;
+	width: 52px;
+	height: 14px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f4_mp.png") no-repeat -3px -29px
+}
+.f4_mp2,
+.f4_mp3 {
+	position: absolute;
+	right: 0;
+	top: 41px;
+	width: 52px;
+	height: 14px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f4_mp.png") no-repeat -13px -51px
+}
+.f4_mp3 {
+	top: 68px
+}
+.f4_ani {
+	left: 294px;
+	top: 198px;
+	background-image: url("http://im-img.qq.com/pcqq/img/f4_animate.png")
+}
+.f5_mp {
+	position: absolute;
+	left: 14px;
+	top: 130px;
+	width: 195px;
+	height: 105px;
+	overflow: hidden
+}
+.f5_mps {
+	width: 195px;
+	height: 315px;
+	background-image: url("http://im-img.qq.com/pcqq/img/ppt_s_mp.png")
+}
+.f5_pc {
+	position: absolute;
+	left: 196px;
+	top: 39px;
+	width: 312px;
+	height: 183px;
+	overflow: hidden
+}
+.f5_ps {
+	width: 312px;
+	height: 549px;
+	background-image: url("http://im-img.qq.com/pcqq/img/ppt_s_pc.png")
+}
+.f5_ps_1,
+.f5_ps_2,
+.f5_ps_3 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/ppt_s_pc.png") no-repeat 0 0
+}
+.f5_ps_2 {
+	background-position: 0 -183px
+}
+.f5_ps_3 {
+	background-position: 0 -366px
+}
+.f5_mps_1,
+.f5_mps_2,
+.f5_mps_3 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/ppt_s_mp.png") no-repeat 0 0
+}
+.f5_mps_2 {
+	background-position: 0 -105px
+}
+.f5_mps_3 {
+	background-position: 0 -210px
+}
+.bgfigure {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 394px;
+	height: 296px;
+	margin-top: -148px;
+	text-align: right;
+	z-index: 40
+}
+.bgfigure strong {
+	display: block;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	padding-top: 30px;
+	margin-bottom: 15px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/qq5.0-9.png") no-repeat right -120px
+}
+#video_1 {
+	width: 109px;
+	height: 33px;
+	overflow: hidden;
+	border: 0;
+	background: transparent url("http://im-img.qq.com/pcqq/img/video.png") no-repeat 0 0;
+	cursor: pointer;
+	text-indent: -9999px;
+	display: none
+}
+.txt-1,
+.txt-2,
+.txt-3,
+.txt-4,
+.txt-5 {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 235px;
+	text-align: right;
+	width: 303px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 93px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt-11.png") no-repeat right top
+}
+.txt-2 {
+	background-image: url("http://im-img.qq.com/pcqq/img/txt-2.png")
+}
+.txt-3 {
+	background-image: url("http://im-img.qq.com/pcqq/img/txt-3.png")
+}
+.txt-4 {
+	background-image: url("http://im-img.qq.com/pcqq/img/txt-4.png")
+}
+.txt-5 {
+	background-image: url("http://im-img.qq.com/pcqq/img/txt-5.png")
+}
+.bgfigure .txt {
+	width: 394px;
+	height: 93px
+}
+.bg-1 .txt {
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt-11.png") no-repeat right top
+}
+.bg-2 .txt {
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt-2.png") no-repeat right top
+}
+.bg-3 .txt {
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt-3.png") no-repeat right top
+}
+.bg-4 .txt {
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt-4.png") no-repeat right top
+}
+.bg-5 .txt {
+	height: 95px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt-5.png") no-repeat right top
+}
+.qpack {
+	padding-top: 31px
+}
+.qpack a.downbtn {
+	float: right;
+	width: 212px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 71px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/down.png") no-repeat 0 0
+}
+.qpack a.downbtn:hover {
+	background-position: 0 -72px
+}
+.softinfo {
+	clear: both;
+	height: 20px;
+	padding: 10px 3px 0 0;
+	color: #fff
+}
+.newfun {
+	clear: both;
+	height: 21px;
+	padding-top: 5px;
+	line-height: 21px;
+	text-align: right
+}
+.newfun a:link,
+.newfun a:visited {
+	color: #fff
+}
+.softsize {
+	margin-right: 45px
+}
+.page1,
+.page7 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-1.png") no-repeat center top
+}
+.page2 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-2.png") no-repeat center top
+}
+.page3 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-3.png") no-repeat center top
+}
+.page4 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-4.png") no-repeat center top
+}
+.page6 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-7.jpg") no-repeat center top
+}
+.page8 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-8.jpg") no-repeat center top
+}
+.page9 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-9.jpg") no-repeat center top
+}
+.page10 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-10.jpg") no-repeat center top
+}
+.page11 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-11.jpg") no-repeat center top
+}
+.page12 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-12.jpg") no-repeat center top
+}
+.page13 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/page-13.jpg") no-repeat center top
+}
+.haswheel .page1,
+.haswheel .page7 {
+	background: url("http://im-img.qq.com/pcqq/img/pg11.png") no-repeat center center, -webkit-linear-gradient(top, #fff, #e9e9e9)
+}
+.haswheel .page1,
+.haswheel .page7 {
+	background: url("http://im-img.qq.com/pcqq/img/pg11.png") no-repeat center center, -moz-linear-gradient(top, #fff, #e9e9e9)
+}
+.haswheel .page1,
+.haswheel .page7 {
+	background: url("http://im-img.qq.com/pcqq/img/pg11.png") no-repeat center center, -o-linear-gradient(top, #fff, #e9e9e9)
+}
+.haswheel .page2 {
+	background: url("http://im-img.qq.com/pcqq/img/pg2.png") no-repeat center center, -webkit-linear-gradient(top, #f8fff4, #c5eaac)
+}
+.haswheel .page2 {
+	background: url("http://im-img.qq.com/pcqq/img/pg2.png") no-repeat center center, -moz-linear-gradient(top, #f8fff4, #c5eaac)
+}
+.haswheel .page2 {
+	background: url("http://im-img.qq.com/pcqq/img/pg2.png") no-repeat center center, -o-linear-gradient(top, #f8fff4, #c5eaac)
+}
+.haswheel .page3 {
+	background: url("http://im-img.qq.com/pcqq/img/pg3.png") no-repeat center center, -webkit-linear-gradient(top, #fffceb, #f6eeb3)
+}
+.haswheel .page3 {
+	background: url("http://im-img.qq.com/pcqq/img/pg3.png") no-repeat center center, -moz-linear-gradient(top, #fffceb, #f6eeb3)
+}
+.haswheel .page3 {
+	background: url("http://im-img.qq.com/pcqq/img/pg3.png") no-repeat center center, -o-linear-gradient(top, #fffceb, #f6eeb3)
+}
+.haswheel .page4 {
+	background: url("http://im-img.qq.com/pcqq/img/pg4.png") no-repeat center center, -webkit-linear-gradient(top, #f0f9ff, #b9e0f8)
+}
+.haswheel .page4 {
+	background: url("http://im-img.qq.com/pcqq/img/pg4.png") no-repeat center center, -moz-linear-gradient(top, #f0f9ff, #b9e0f8)
+}
+.haswheel .page4 {
+	background: url("http://im-img.qq.com/pcqq/img/pg4.png") no-repeat center center, -o-linear-gradient(top, #f0f9ff, #b9e0f8)
+}
+.haswheel .page6 {
+	background: url("http://im-img.qq.com/pcqq/img/pg7.png") no-repeat center center, -webkit-linear-gradient(top, #f8fff4, #c5eaac)
+}
+.haswheel .page6 {
+	background: url("http://im-img.qq.com/pcqq/img/pg7.png") no-repeat center center, -moz-linear-gradient(top, #f8fff4, #c5eaac)
+}
+.haswheel .page6 {
+	background: url("http://im-img.qq.com/pcqq/img/pg7.png") no-repeat center center, -o-linear-gradient(top, #f8fff4, #c5eaac)
+}
+.haswheel .page8 {
+	background: url("http://im-img.qq.com/pcqq/img/pg8.png") no-repeat center center, -webkit-linear-gradient(top, #fffceb, #f6eeb3)
+}
+.haswheel .page8 {
+	background: url("http://im-img.qq.com/pcqq/img/pg8.png") no-repeat center center, -moz-linear-gradient(top, #fffceb, #f6eeb3)
+}
+.haswheel .page8 {
+	background: url("http://im-img.qq.com/pcqq/img/pg8.png") no-repeat center center, -o-linear-gradient(top, #fffceb, #f6eeb3)
+}
+.haswheel .page9 {
+	background: url("http://im-img.qq.com/pcqq/img/page-9.jpg") no-repeat center center;
+	background-size: 100%
+}
+.haswheel .page10 {
+	background: url("http://im-img.qq.com/pcqq/img/page-10.jpg") no-repeat center center;
+	background-size: 100%
+}
+.haswheel .page11 {
+	background: url("http://im-img.qq.com/pcqq/img/page-11.jpg") no-repeat center center;
+	background-size: 100%
+}
+.haswheel .page12 {
+	background: url("http://im-img.qq.com/pcqq/img/page-12.jpg") no-repeat center center;
+	background-size: 100%
+}
+.haswheel .page13 {
+	background: url("http://im-img.qq.com/pcqq/img/page-13.jpg") no-repeat center center;
+	background-size: 100%
+}
+.txtwrap,
+.imgwrap {
+	position: absolute
+}
+.page1 .imgwrap {
+	right: -142px;
+	top: 50%;
+	width: 680px;
+	height: 464px;
+	margin-top: -232px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_1.png") no-repeat 0 0
+}
+.page2 .imgwrap {
+	left: -228px;
+	top: 50%;
+	width: 790px;
+	height: 510px;
+	margin-top: -252px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_2.png") no-repeat right 0
+}
+.page3 .imgwrap {
+	right: -182px;
+	top: 50%;
+	width: 723px;
+	height: 521px;
+	margin-top: -260px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_31.png") no-repeat 0 0
+}
+.page4 .imgwrap {
+	left: -264px;
+	top: 50%;
+	width: 804px;
+	height: 530px;
+	margin-top: -252px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_41.png") no-repeat right 0
+}
+.page7 .imgwrap {
+	right: -14px;
+	top: 50%;
+	width: 782px;
+	height: 499px;
+	margin-top: -250px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_6.png") no-repeat right 0
+}
+.page6 .imgwrap {
+	left: -10px;
+	top: 50%;
+	width: 538px;
+	height: 631px;
+	margin-top: -315px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_7.png") no-repeat right 0
+}
+.page8 .imgwrap {
+	left: -100px;
+	top: 50%;
+	width: 639px;
+	height: 628px;
+	margin-top: -314px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_8.png") no-repeat right 0
+}
+.page9 .imgwrap {
+	right: -69px;
+	top: 50%;
+	width: 575px;
+	height: 475px;
+	margin-top: -238px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_91.png") no-repeat right 0
+}
+.page10 .imgwrap {
+	left: -100px;
+	top: 50%;
+	width: 689px;
+	height: 416px;
+	margin-top: -203px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_10.png") no-repeat right 0
+}
+.page11 .imgwrap {
+	right: -77px;
+	top: 50%;
+	width: 654px;
+	height: 503px;
+	margin-top: -252px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_11.png") no-repeat right 0
+}
+.page12 .imgwrap {
+	left: -30px;
+	top: 50%;
+	width: 539px;
+	height: 472px;
+	margin-top: -236px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_12.png") no-repeat right 0
+}
+.page13 .imgwrap {
+	right: -155px;
+	top: 50%;
+	width: 752px;
+	height: 608px;
+	margin-top: -304px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/f_img_13.png") no-repeat right 0
+}
+.txtwrap h3 {
+	min-height: 60px;
+	font-size: 36px;
+	color: #313131
+}
+.txtwrap h3 span {
+	font-size: 48px
+}
+.txtwrap p {
+	margin-bottom: 34px;
+	line-height: 27px;
+	font-size: 18px;
+	color: #717171
+}
+.txtwrap p .sfont {
+	font-size: 14px
+}
+.sfont a:link,
+.sfont a:visited {
+	color: #1a7fe3
+}
+.modInner {
+	position: relative;
+	width: 994px;
+	height: 720px;
+	margin: 0 auto
+}
+.page1 .txtwrap {
+	left: 0;
+	top: 50%;
+	width: 454px;
+	height: 400px;
+	margin-top: -200px
+}
+.page2 .txtwrap {
+	right: -65px;
+	top: 50%;
+	width: 470px;
+	height: 380px;
+	margin-top: -190px
+}
+.page3 .txtwrap {
+	left: 0;
+	top: 50%;
+	width: 440px;
+	height: 400px;
+	margin-top: -200px
+}
+.page4 .txtwrap {
+	right: -20px;
+	top: 50%;
+	width: 458px;
+	height: 346px;
+	margin-top: -173px
+}
+.page6 .txtwrap {
+	right: -20px;
+	top: 50%;
+	width: 458px;
+	height: 176px;
+	margin-top: -88px
+}
+.page7 .txtwrap {
+	left: 0;
+	top: 50%;
+	width: 458px;
+	height: 186px;
+	margin-top: -93px
+}
+.page8 .txtwrap {
+	right: -20px;
+	top: 50%;
+	width: 458px;
+	height: 148px;
+	margin-top: -74px
+}
+.page9 .txtwrap {
+	left: 0;
+	top: 50%;
+	width: 464px;
+	height: 224px;
+	margin-top: -112px
+}
+.page10 .txtwrap {
+	right: -35px;
+	top: 50%;
+	width: 432px;
+	height: 224px;
+	margin-top: -112px
+}
+.page11 .txtwrap {
+	left: 0;
+	top: 50%;
+	width: 417px;
+	height: 148px;
+	margin-top: -74px
+}
+.page12 .txtwrap {
+	right: -20px;
+	top: 50%;
+	width: 432px;
+	height: 224px;
+	margin-top: -112px
+}
+.page13 .txtwrap {
+	left: 0;
+	top: 50%;
+	width: 417px;
+	height: 180px;
+	margin-top: -100px
+}
+.page9 p,
+.page10 p,
+.page11 p {
+	padding-top: 10px
+}
+.haswheel .txtwrap h3,
+.haswheel .txtwrap p,
+.haswheel .txtwrap .txt_ani_1 {
+	opacity: 0
+}
+.page5 .txtwrap h3,
+.page5 .txtwrap p {
+	opacity: 1
+}
+.txt_ani_1,
+.txt_ani_2,
+.txt_ani_3,
+.txt_ani_4 {
+	width: 262px;
+	height: 141px;
+	position: relative
+}
+.txt_ani_1 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt_ani_1_1.png") no-repeat 0 0
+}
+.txt_ani_2 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt_ani_2.png") no-repeat 0 0
+}
+.txt_ani_3 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt_ani_3.png") no-repeat 0 0
+}
+.txt_ani_4 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt_ani_4.png") no-repeat 0 0
+}
+.txt_ani {
+	position: absolute;
+	left: 205px;
+	top: 47px;
+	width: 50px;
+	height: 50px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/txt_ani.png") no-repeat 0 0
+}
+.txt_ani_1 .txt_ani {
+	background-image: url("http://im-img.qq.com/pcqq/img/txt_r_1.png")
+}
+.txt_ani_2 .txt_ani {
+	background-image: url("http://im-img.qq.com/pcqq/img/txt_r_3.png")
+}
+.txt_ani_3 .txt_ani {
+	background-image: url("http://im-img.qq.com/pcqq/img/txt_r_2.png")
+}
+.txt_ani_4 .txt_ani {
+	background-image: url("http://im-img.qq.com/pcqq/img/txt_r_4.png")
+}
+.page5 {
+	width: 100%;
+	max-width: 1600px;
+	height: 600px;
+	min-height: 600px;
+	margin: 0 auto;
+	background-color: #eceff2
+}
+.haswheel .page5 {
+	width: 100%;
+	height: 600px;
+	max-width: 100%;
+	min-height: 600px
+}
+.sfeature {
+	width: 994px;
+	height: 600px;
+	margin: 0 auto
+}
+.sf {
+	float: left;
+	position: relative;
+	width: 497px;
+	height: 580px;
+	text-align: center
+}
+.sf h3 {
+	height: 42px;
+	font-size: 24px;
+	color: #313131
+}
+.sf p {
+	width: 280px;
+	margin: 0 auto;
+	text-align: left;
+	line-height: 23px;
+	font-size: 14px;
+	color: #717171
+}
+.sf .txtwrap {
+	width: 497px;
+	height: 138px;
+	left: 0;
+	bottom: 0
+}
+.ft1 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/f5_img_1_1.png") no-repeat center 48px
+}
+.ft2 {
+	background: transparent url("http://im-img.qq.com/pcqq/img/f5_img_2_1.png") no-repeat center 100px
+}
+.videos {
+	width: 994px;
+	margin: 0 auto;
+	padding-top: 54px;
+	display: none
+}
+.videos li {
+	float: left;
+	width: 331px
+}
+.videos li h4 {
+	width: 294px;
+	height: 54px;
+	font-size: 24px;
+	text-align: center;
+	color: #494a4b
+}
+.videos li a {
+	display: block;
+	width: 250px;
+	height: 160px;
+	margin: 0 0 0 22px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/fakevideo.png") no-repeat 0 0
+}
+.foot {
+	height: 110px;
+	min-height: 110px;
+	padding-top: 50px;
+	background-color: #41aae7;
+	text-align: center
+}
+.foot p {
+	height: 35px;
+	line-height: 35px;
+	color: #fff
+}
+.haswheel .foot {
+	height: 110px;
+	min-height: 110px
+}
+.f2_pc_box {
+	position: absolute;
+	left: 58px;
+	top: 75px;
+	width: 236px;
+	height: 120px
+}
+.f2_pc_box span {
+	display: block;
+	width: 100%;
+	height: 31px
+}
+.fp_1,
+.fp_3 {
+	float: left;
+	clear: both;
+	width: 185px;
+	height: 31px;
+	margin: 9px 0 0 0
+}
+.fp_2 {
+	float: right;
+	clear: both;
+	width: 185px;
+	height: 31px;
+	margin: 9px 0 0 0
+}
+.fp_3 {
+	margin-top: 5px
+}
+.fp_1 span {
+	background: transparent url("http://im-img.qq.com/pcqq/img/fpc1.png") no-repeat left center
+}
+.fp_2 span {
+	background: transparent url("http://im-img.qq.com/pcqq/img/fpc2.png") no-repeat right top
+}
+.fp_3 span {
+	background: transparent url("http://im-img.qq.com/pcqq/img/fpc3.png") no-repeat left top
+}
+.f2_mp_box {
+	position: absolute;
+	left: 10px;
+	top: 48px;
+	width: 100px;
+	height: 149px;
+	overflow: hidden
+}
+.f2_mp_box span {
+	display: block;
+	width: 100%;
+	height: 30px
+}
+.fm_1,
+.fm_2,
+.fm_3 {
+	float: left;
+	clear: both;
+	width: 100px;
+	height: 30px;
+	margin: 15px 0 0 0
+}
+.fm_2 {
+	float: right
+}
+.fm_1 span {
+	background: transparent url("http://im-img.qq.com/pcqq/img/fm_1.png") no-repeat left center
+}
+.fm_2 span {
+	background: transparent url("http://im-img.qq.com/pcqq/img/fm_2.png") no-repeat right top
+}
+.fm_3 span {
+	background: transparent url("http://im-img.qq.com/pcqq/img/fm_3.png") no-repeat left top
+}
+.navfix,
+.sidenav {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	padding-top: 3px;
+	left: 0;
+	top: 0
+}
+.navfix {
+	display: none;
+	padding-top: 8px
+}
+.fixnav {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	height: 58px;
+	margin-left: -497px;
+	z-index: 900
+}
+.fixbg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 58px;
+	background: #000;
+	opacity: .06;
+	z-index: 800
+}
+.navfix strong,
+.navfix .subindex {
+	float: left;
+	width: 102px;
+	height: 0;
+	margin-top: 8px;
+	overflow: hidden;
+	padding-top: 44px;
+	font-size: 0;
+	background: transparent url("http://im-img.qq.com/pcqq/img/flogo.png") no-repeat 0 0
+}
+.fnav {
+	float: right;
+	width: 400px;
+	text-align: right;
+	line-height: 57px
+}
+.fnav a:link,
+.fnav a:visited {
+	color: #666
+}
+.fnav span {
+	color: #666
+}
+.fdown {
+	float: right;
+	width: 83px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 27px;
+	margin: 14px 0 0 20px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/fdown.png") no-repeat 0 0
+}
+.fdown:hover {
+	background-position: 0 -29px
+}
+.sidenav {
+	display: none;
+	width: 30px;
+	height: 172px;
+	top: 50%;
+	margin-top: -86px
+}
+.sidenav ul {
+	width: 12px;
+	padding-left: 9px
+}
+.sidenav li {
+	position: relative;
+	width: 8px;
+	height: 8px;
+	margin: 0 auto 8px;
+	font-size: 0;
+	line-height: 0;
+	background: transparent url("http://im-img.qq.com/pcqq/img/unsl.png") no-repeat 0 0;
+	cursor: pointer
+}
+.sidenav li.showed {
+	width: 12px;
+	height: 12px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/sled.png") no-repeat 0 0
+}
+.sidenav li em {
+	display: none;
+	padding: 2px;
+	position: absolute;
+	left: 16px;
+	top: -2px;
+	width: 200px;
+	font-size: 12px;
+	line-height: 12px
+}
+.sidenav li:hover em {
+	display: inline
+}
+.bg-1 .bgfigure,
+.bg-2 .bgfigure,
+.bg-3 .bgfigure,
+.bg-4 .bgfigure,
+.bg-5 .bgfigure {
+	-webkit-animation: moveInLeft .8s ease;
+	animation: moveInLeft .8s ease
+}
+.bg-1 .txt,
+.bg-2 .txt,
+.bg-3 .txt,
+.bg-4 .txt,
+.bg-5 .txt {
+	-webkit-animation: moveInLeft .8s ease;
+	animation: moveInLeft .8s ease
+}
+.bg-1 .bn-1 .animate-1,
+.bg-2 .bn-2 .animate-2,
+.bg-3 .bn-3 .animate-3,
+.bg-4 .bn-4 .animate-4,
+.bg-5 .bn-5 .animate-5 {
+	-webkit-animation: moveInRight .8s ease;
+	animation: moveInRight .8s ease
+}
+#page1 h3,
+#page3 h3,
+#page5 h3,
+#page7 h3,
+#page9 h3,
+#page11 h3,
+#page13 h3 {
+	opacity: 1;
+	-webkit-animation: moveInRight 1s ease 1s;
+	animation: moveInRight 1s ease 1s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+#page1 p,
+#page3 p,
+#page5 p,
+#page7 p,
+#page9 p,
+#page11 p,
+#page13 p {
+	opacity: 1;
+	-webkit-animation: moveInRight 1s ease 1.5s;
+	animation: moveInRight 1s ease 1.5s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+#page9 .txt_ani_1,
+#page11 .txt_ani_3 {
+	opacity: 1;
+	-webkit-animation: moveInRight 1s ease 1.8s;
+	animation: moveInRight 1s ease 1.8s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+#page2 h3,
+#page4 h3,
+#page6 h3,
+#page8 h3,
+#page10 h3,
+#page12 h3 {
+	opacity: 1;
+	-webkit-animation: moveInLeft 1s ease 1s;
+	animation: moveInLeft 1s ease 1s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+#page2 p,
+#page4 p,
+#page6 p,
+#page8 p,
+#page10 p,
+#page12 p {
+	opacity: 1;
+	-webkit-animation: moveInLeft 1s ease 1.5s;
+	animation: moveInLeft 1s ease 1.5s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+#page10 .txt_ani_2,
+#page12 .txt_ani_4 {
+	opacity: 1;
+	-webkit-animation: moveInLeft 1s ease 1.8s;
+	animation: moveInLeft 1s ease 1.8s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.left_1 {
+	-webkit-animation: fromleft .2s ease .1s;
+	animation: fromleft .2s ease .1s;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.left_2 {
+	-webkit-animation: fromleft .2s ease 2s;
+	animation: fromleft .2s ease 2s;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.right {
+	-webkit-animation: fromright .2s ease 1s;
+	animation: fromright .2s ease 1s;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.bt1 {
+	-webkit-animation: trs 1s linear 3s, s1 5s linear 4s infinite;
+	animation: trs 1s linear 3s, s1 5s linear 4s infinite
+}
+.bt2 {
+	-webkit-animation: trs 1s linear 3s, s2 5s linear 4s infinite;
+	animation: trs 1s linear 3s, s2 5s linear 4s infinite
+}
+.bt3 {
+	-webkit-animation: trs 1s linear 3s, s3 5s linear 4s infinite;
+	animation: trs 1s linear 3s, s3 5s linear 4s infinite
+}
+.mp_left_1 {
+	-webkit-animation: mpLeft .2s ease .1s;
+	animation: mpLeft .2s ease .1s;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.mp_left_2 {
+	-webkit-animation: mpLeft .2s ease 2s;
+	animation: mpLeft .2s ease 2s;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.mp_left_3 {
+	-webkit-animation: mpLeft .2s ease 3s;
+	animation: mpLeft .2s ease 3s;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.mp_right {
+	-webkit-animation: mpRight .2s ease 1s;
+	animation: mpRight .2s ease 1s;
+	-webkit-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.mp_bt1 {
+	-webkit-animation: trs 1s linear 3s, mps1 5s linear 4s infinite;
+	animation: trs 1s linear 3s, mps1 5s linear 4s infinite
+}
+.mp_bt2 {
+	-webkit-animation: trs 1s linear 3s, mps2 5s linear 4s infinite;
+	animation: trs 1s linear 3s, mps2 5s linear 4s infinite
+}
+.mp_bt3 {
+	-webkit-animation: trs 1s linear 3s, mps3 5s linear 4s infinite;
+	animation: trs 1s linear 3s, mps3 5s linear 4s infinite
+}
+.top-118 {
+	-webkit-animation: top-118 2s linear 3s infinite;
+	animation: top-118 2s linear 3s infinite
+}
+.top-149 {
+	-webkit-animation: top-149 2.3s linear 3s infinite;
+	animation: top-149 2.3s linear 3s infinite
+}
+.top-315 {
+	-webkit-animation: top-315 8s linear 1s infinite;
+	animation: top-315 8s linear 1s infinite
+}
+.top-549 {
+	-webkit-animation: top-549 8s linear 1s infinite;
+	animation: top-549 8s linear 1s infinite
+}
+.top-105 {
+	-webkit-animation: top105 2s ease .1s infinite;
+	animation: top105 2s ease .1s infinite
+}
+.top-183 {
+	-webkit-animation: top183 2s ease .1s infinite;
+	animation: top183 2s ease .1s infinite
+}
+#myVideo {
+	width: 700px;
+	height: 434px;
+	overflow: hidden
+}
+.videoArea {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 700px;
+	height: 434px;
+	margin: -217px 0 0 -350px;
+	border: 1px solid #000;
+	box-shadow: 0 16px 25px rgba(0, 0, 0, 0.5);
+	z-index: 1000
+}
+.videoArea .close {
+	position: absolute;
+	right: -18px;
+	top: -18px;
+	width: 31px;
+	height: 31px;
+	background: transparent url("http://im-img.qq.com/pcqq/img/slider-player.png") no-repeat -129px 0;
+	z-index: 1002
+}
+#overlay {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .9;
+	filter: Alpha(opacity=90);
+	z-index: 500
+}
+.moveInTop {
+	-webkit-animation: moveInTop .8s ease 1s;
+	-moz-animation: moveInTop .8s ease 1s;
+	-o-animation: moveInTop .8s ease 1s;
+	animation: moveInTop .8s ease 1s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.moveInLeft {
+	-webkit-animation: moveInLeft .8s ease;
+	-moz-animation: moveInLeft .8s ease;
+	-o-animation: moveInLeft .8s ease;
+	animation: moveInLeft .8s ease;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.moveInRight {
+	-webkit-animation: moveInRight .8s ease;
+	-moz-animation: moveInRight .8s ease;
+	-o-animation: moveInRight .8s ease;
+	animation: moveInRight .8s ease;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.pic_1 {
+	-webkit-animation: picup 2s ease .5s;
+	-moz-animation: picup 2s ease .5s;
+	-o-animation: picup 2s ease .5s;
+	animation: picup 2s ease .5s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.pic_2 {
+	-webkit-animation: picup 2s ease .5s;
+	-moz-animation: picup 2s ease .5s;
+	-o-animation: picup 2s ease .5s;
+	animation: picup 2s ease .5s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.pic_3 {
+	-webkit-animation: picup 2s ease 1s;
+	-moz-animation: picup 2s ease 1s;
+	-o-animation: picup 2s ease 1s;
+	animation: picup 2s ease 1s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.pic_4 {
+	-webkit-animation: picup 2s ease 1s;
+	-moz-animation: picup 2s ease 1s;
+	-o-animation: picup 2s ease 1s;
+	animation: picup 2s ease 1s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.pic_5 {
+	-webkit-animation: picdown .8s ease 1.5s;
+	-moz-animation: picdown .8s ease 1.5s;
+	-o-animation: picdown .8s ease 1.5s;
+	animation: picdown .8s ease 1.5s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.pic_6 {
+	-webkit-animation: picdown .8s ease 1.5s;
+	-moz-animation: picdown .8s ease 1.5s;
+	-o-animation: picdown .8s ease 1.5s;
+	animation: picdown .8s ease 1.5s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.pic_7 {
+	-webkit-animation: picdown .8s ease 2s;
+	-moz-animation: picdown .8s ease 2s;
+	-o-animation: picdown .8s ease 2s;
+	animation: picdown .8s ease 2s;
+	-webkit-animation-fill-mode: backwards;
+	-moz-animation-fill-mode: backwards;
+	-o-animation-fill-mode: backwards;
+	animation-fill-mode: backwards
+}
+.flashBox {
+	background: url("http://im-img.qq.com/online/images/loading.gif") no-repeat 50% 40%;
+	width: 910px;
+	height: auto
+}
+.overlay {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .9;
+	filter: Alpha(opacity=90)
+}
+#flashDiv {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 978px;
+	height: 700px;
+	margin: -350px 0 0 -489px;
+	display: none;
+	z-index: 10000
+}
+.flashBar {
+	float: right;
+	width: 67px
+}
+.flashBar a {
+	display: block;
+	width: 67px;
+	height: 0;
+	overflow: hidden;
+	padding-top: 67px;
+	background: #000 url("http://im-img.qq.com/home/img/q2013/flahicons.png") no-repeat 0 0;
+	border-bottom: 1px solid #333
+}
+.flashBar a.close {
+	background-position: 14px 14px
+}
+.flashBar a.sharetozone {
+	background-position: 14px -52px
+}
+.flashBar a.sharetoweibo {
+	background-position: 14px -120px
+}
+.flashBar a.close:hover {
+	background-position: -52px 14px
+}
+.flashBar a.sharetozone:hover {
+	background-position: -52px -52px
+}
+.flashBar a.sharetoweibo:hover {
+	background-position: -52px -120px
+}
+.togame {
+	clear: both;
+	padding-right: 68px;
+	line-height: 21px;
+	text-align: right
+}
+.togame a:link,
+.togame a:visited {
+	color: #fff
+}
+@media screen and (min-height: 900px) and (min-width: 1280px) {
+	.haswheel .bnwrap {
+		width: 1280px
+	}
+	.haswheel .f1_pc,
+	.haswheel .f2_pc,
+	.haswheel .f3_pc,
+	.haswheel .f4_pc {
+		width: 584px;
+		height: 455px
+	}
+	.haswheel .f1_mp,
+	.haswheel .f2_mp,
+	.haswheel .f3_mp,
+	.haswheel .f4_mp {
+		width: 197px;
+		height: 406px
+	}
+	.haswheel .animate-1,
+	.haswheel .animate-2,
+	.haswheel .animate-3,
+	.haswheel .animate-4 {
+		left: -91;
+		height: 460px;
+		margin-top: -230px
+	}
+	.haswheel .animate-4 {
+		height: 554px;
+		margin-top: -277px
+	}
+	.haswheel .animate-5 {
+		width: 935px;
+		height: 452px;
+		left: -91px;
+		margin-top: -216px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/share_b.png") no-repeat 0 0
+	}
+	.haswheel .heads {
+		position: absolute;
+		left: 90px;
+		top: 350px;
+		width: 192px;
+		height: 102px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/heads_b.png") no-repeat 0 0
+	}
+	.haswheel .f1_s_a {
+		width: 276px;
+		height: 240px;
+		overflow: hidden;
+		margin: 80px 0 0 207px
+	}
+	.haswheel .f1_s {
+		width: 276px;
+		height: 240px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/f1_b_pc_c.png") no-repeat -207px -80px
+	}
+	.haswheel .f1_s_m {
+		width: 98px;
+		height: 65px;
+		overflow: hidden;
+		margin: 77px 0 0 10px;
+		background: #cbe9fb
+	}
+	.haswheel .f1_m {
+		width: 98px;
+		height: 65px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/f1_mp.png") no-repeat -10px -77px
+	}
+	.haswheel .f1_pc {
+		background-image: url("http://im-img.qq.com/pcqq/img/f1_b_pc.png")
+	}
+	.haswheel .f1_mp {
+		background-image: url("http://im-img.qq.com/pcqq/img/f1_b_mp.png");
+		left: 708px;
+		top: 49px
+	}
+	.haswheel .f1_file {
+		width: 301px;
+		height: 230px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f1_b_file.png");
+		left: 471px;
+		top: 241px
+	}
+	.haswheel .f1_ani {
+		width: 102px;
+		height: 102px;
+		background-image: url("http://im-img.qq.com/pcqq/img/b_rotate.png");
+		left: 658px;
+		top: 388px
+	}
+	.haswheel .f1_s_m {
+		width: 184px;
+		height: 269px;
+		overflow: hidden;
+		margin: 55px 0 0 8px;
+		background: #cbe9fb
+	}
+	.haswheel .f1_m {
+		width: 184px;
+		height: 269px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/f1_b_mp_c.png") no-repeat -8px -55px
+	}
+	.haswheel .f2_pc {
+		background-image: url("http://im-img.qq.com/pcqq/img/f2_b_pc.png")
+	}
+	.haswheel .f2_mp {
+		background-image: url("http://im-img.qq.com/pcqq/img/f2_b_mp.png");
+		left: 691px;
+		top: 49px
+	}
+	.haswheel .f2_pc_box {
+		left: 105px;
+		top: 124px;
+		width: 378px;
+		height: 197px
+	}
+	.haswheel .fp_1,
+	.haswheel .fp_2,
+	.haswheel .fp_3 {
+		width: 305px;
+		height: 70px
+	}
+	.haswheel .fp_1 {
+		margin-top: 15px
+	}
+	.haswheel .fp_2 {
+		margin-top: 0
+	}
+	.haswheel .fp_3 {
+		margin-top: -10px
+	}
+	.haswheel .fp_1 span {
+		height: 47px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f2_b_1.png")
+	}
+	.haswheel .fp_2 span {
+		height: 47px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f2_b_2.png")
+	}
+	.haswheel .fp_3 span {
+		height: 47px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f2_b_3.png")
+	}
+	.haswheel .f2_mp_box {
+		left: 8px;
+		top: 81px;
+		width: 184px;
+		height: 249px
+	}
+	.haswheel .fm_1,
+	.haswheel .fm_2,
+	.haswheel .fm_3 {
+		width: 168px;
+		height: 50px;
+		margin: 20px 0 0 0
+	}
+	.haswheel .f2_mp_box span {
+		height: 50px
+	}
+	.haswheel .fm_1 span {
+		background: transparent url("http://im-img.qq.com/pcqq/img/f2_b_a.png") no-repeat left center
+	}
+	.haswheel .fm_2 span {
+		background: transparent url("http://im-img.qq.com/pcqq/img/f2_b_b.png") no-repeat right top
+	}
+	.haswheel .fm_3 span {
+		background: transparent url("http://im-img.qq.com/pcqq/img/f2_b_c.png") no-repeat left top
+	}
+	.haswheel .f2_s_a,
+	.haswheel .f2_a {
+		width: 378px;
+		height: 197px
+	}
+	.haswheel .f2_m {
+		width: 184px;
+		height: 249px
+	}
+	.haswheel .f3_pc {
+		left: 303px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f3_b_pc.png")
+	}
+	.haswheel .f3_mp {
+		left: -20px;
+		top: 48px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f3_b_mp.png");
+		z-index: 500
+	}
+	.haswheel .f3_pshow {
+		width: 558px;
+		height: 183px;
+		margin: 15px 0 0 15px
+	}
+	.haswheel .f3_p1 {
+		left: 119px;
+		top: 49px;
+		width: 102px;
+		height: 102px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f3_b_1.png")
+	}
+	.haswheel .f3_p2 {
+		left: 153px;
+		top: -52px;
+		width: 102px;
+		height: 102px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f3_b_2.png")
+	}
+	.haswheel .f3_p3 {
+		left: 189px;
+		top: -139px;
+		width: 127px;
+		height: 127px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f3_b_3.png")
+	}
+	.haswheel .f3_p4 {
+		left: 326px;
+		top: -232px;
+		width: 127px;
+		height: 127px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f3_b_4.png")
+	}
+	.haswheel .f3_p5 {
+		left: 419px;
+		top: -269px;
+		width: 199px;
+		height: 199px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f3_b_5.png")
+	}
+	.haswheel .f3_p6 {
+		left: 563px;
+		top: -189px;
+		width: 199px;
+		height: 199px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f3_b_6.png")
+	}
+	.haswheel .f3_p7 {
+		left: 696px;
+		top: -78px;
+		width: 199px;
+		height: 199px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f3_b_7.png")
+	}
+	.haswheel .f4_pc {
+		left: 157px;
+		top: 255px;
+		width: 286px;
+		height: 237px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f4_b_pc.png")
+	}
+	.haswheel .f4_mp {
+		left: 600px;
+		top: 280px;
+		width: 109px;
+		height: 212px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f4_b_mp.png")
+	}
+	.haswheel .f4_ps {
+		width: 222px;
+		height: 108px;
+		margin: 58px 0 0 33px
+	}
+	.haswheel .f4_mps {
+		width: 98px;
+		height: 149px;
+		margin: 33px 0 0 6px
+	}
+	.haswheel .f4_pc1 {
+		position: absolute;
+		left: 6px;
+		top: 13px;
+		width: 125px;
+		height: 28px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/f4_b_pc.png") no-repeat -41px -70px
+	}
+	.haswheel .f4_pc2,
+	.haswheel .f4_pc3 {
+		position: absolute;
+		right: 6px;
+		top: 51px;
+		width: 110px;
+		height: 28px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/f4_b_pc.png") no-repeat -139px -108px
+	}
+	.haswheel .f4_pc3 {
+		top: 89px
+	}
+	.haswheel .f4_mp1 {
+		position: absolute;
+		left: 6px;
+		top: 17px;
+		width: 80px;
+		height: 35px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/f4_b_mp.png") no-repeat -11px -47px
+	}
+	.haswheel .f4_mp2,
+	.haswheel .f4_mp3 {
+		position: absolute;
+		right: 0;
+		top: 61px;
+		width: 80px;
+		height: 25px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/f4_b_mp.png") no-repeat -21px -82px
+	}
+	.haswheel .f4_mp3 {
+		top: 107px
+	}
+	.haswheel .f4_ani {
+		left: 473px;
+		top: 317px;
+		width: 97px;
+		height: 97px;
+		background: transparent url("http://im-img.qq.com/pcqq/img/f4_b_r.png") no-repeat 0 0
+	}
+	.haswheel .animate-4 {
+		width: 864px;
+		height: 553px;
+		background-image: url("http://im-img.qq.com/pcqq/img/f4_b_cloud.png");
+		left: -121px
+	}
+	.haswheel .f5_mp {
+		left: 26px;
+		top: 213px;
+		width: 320px;
+		height: 173px
+	}
+	.haswheel .f5_mps {
+		width: 320px;
+		height: 519px;
+		background-image: url("http://im-img.qq.com/pcqq/img/ppt_b_mp.png")
+	}
+	.haswheel .f5_pc {
+		left: 325px;
+		top: 65px;
+		width: 514px;
+		height: 302px
+	}
+	.haswheel .f5_ps {
+		width: 514px;
+		height: 906px;
+		background-image: url("http://im-img.qq.com/pcqq/img/ppt_b_pc.png")
+	}
+	.haswheel .txt-1,
+	.haswheel .txt-2,
+	.haswheel .txt-3,
+	.haswheel .txt-4 {
+		top: 390px
+	}
+	.haswheel .page1 .txtwrap,
+	.haswheel .page3 .txtwrap {
+		left: -30px
+	}
+	.haswheel .page2 .txtwrap,
+	.haswheel .page4 .txtwrap {
+		right: -95px
+	}
+	.left_1 {
+		-webkit-animation: bfromleft .2s ease .1s;
+		animation: bfromleft .2s ease .1s;
+		-webkit-animation-fill-mode: backwards;
+		animation-fill-mode: backwards
+	}
+	.left_2 {
+		-webkit-animation: bfromleft .2s ease 2s;
+		animation: bfromleft .2s ease 2s;
+		-webkit-animation-fill-mode: backwards;
+		animation-fill-mode: backwards
+	}
+	.right {
+		-webkit-animation: bfromright .2s ease 1s;
+		animation: bfromright .2s ease 1s;
+		-webkit-animation-fill-mode: backwards;
+		animation-fill-mode: backwards
+	}
+	.mp_left_1 {
+		-webkit-animation: bfromleft .2s ease .1s;
+		animation: bfromleft .2s ease .1s;
+		-webkit-animation-fill-mode: backwards;
+		animation-fill-mode: backwards
+	}
+	.mp_left_2 {
+		-webkit-animation: bfromleft .2s ease 2s;
+		animation: bfromleft .2s ease 2s;
+		-webkit-animation-fill-mode: backwards;
+		animation-fill-mode: backwards
+	}
+	.mp_right {
+		-webkit-animation: bfromright .2s ease 1s;
+		animation: bfromright .2s ease 1s;
+		-webkit-animation-fill-mode: backwards;
+		animation-fill-mode: backwards
+	}
+	.bt1 {
+		-webkit-animation: btrs 1s linear 3s, bs1 5s linear 4s infinite;
+		animation: btrs 1s linear 3s, bs1 5s linear 4s infinite
+	}
+	.bt2 {
+		-webkit-animation: btrs 1s linear 3s, bs2 5s linear 4s infinite;
+		animation: btrs 1s linear 3s, bs2 5s linear 4s infinite
+	}
+	.bt3 {
+		-webkit-animation: btrs 1s linear 3s, bs3 5s linear 4s infinite;
+		animation: btrs 1s linear 3s, bs3 5s linear 4s infinite
+	}
+	.mp_bt1 {
+		-webkit-animation: btrs 1s linear 3s, bmps1 5s linear 4s infinite;
+		animation: btrs 1s linear 3s, bmps1 5s linear 4s infinite
+	}
+	.mp_bt2 {
+		-webkit-animation: btrs 1s linear 3s, bmps2 5s linear 4s infinite;
+		animation: btrs 1s linear 3s, bmps2 5s linear 4s infinite
+	}
+	.mp_bt3 {
+		-webkit-animation: btrs 1s linear 3s, bmps3 5s linear 4s infinite;
+		animation: btrs 1s linear 3s, bmps3 5s linear 4s infinite
+	}
+	.top-118 {
+		-webkit-animation: top-197 2s linear 3s infinite;
+		animation: top-197 2s linear 3s infinite
+	}
+	.top-149 {
+		-webkit-animation: top-249 2.3s linear 3s infinite;
+		animation: top-249 2.3s linear 3s infinite
+	}
+	.top-105 {
+		-webkit-animation: top173 2s ease .1s infinite;
+		animation: top173 2s ease .1s infinite
+	}
+	.top-183 {
+		-webkit-animation: top302 2s ease .1s infinite;
+		animation: top302 2s ease .1s infinite
+	}
+	.top-315 {
+		-webkit-animation: top-519 8s linear 1s infinite;
+		animation: top-519 8s linear 1s infinite
+	}
+	.top-549 {
+		-webkit-animation: top-906 8s linear 1s infinite;
+		animation: top-906 8s linear 1s infinite
+	}
+}
+@media screen and (max-width: 990px) {
+	.topbar {
+		width: 100%;
+		left: 0;
+		margin: 0
+	}
+	.snav,
+	.flashData,
+	#bgimg .animate-1,
+	#bgimg .animate-2,
+	#bgimg .animate-3,
+	#bgimg .animate-4,
+	.fixnav,
+	#sidenav {
+		display: none
+	}
+	.bgfigure {
+		left: 50%;
+		margin-left: -150px;
+		margin-top: -200px
+	}
+	.bnwrap,
+	.modInner {
+		width: 100%
+	}
+	.ipage .txtwrap {
+		position: static;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 90%;
+		height: auto;
+		margin: 0 auto
+	}
+	.ipage .imgwrap {
+		position: static;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 90%;
+		margin: 0 auto;
+		background-size: 100%
+	}
+	.ipage .imgwrap img {
+		max-width: 100%
+	}
+	.sfeature {
+		width: 90%;
+		margin: 0 auto;
+		height: auto
+	}
+	.sf {
+		background-size: 50%;
+		background-position: center 100px
+	}
+	.sf,
+	.sf .txtwrap {
+		width: 100%
+	}
+	.ft1 {
+		height: 380px
+	}
+	.ft2 {
+		background-position: center 120px
+	}
+	.haswheel .txtwrap h3,
+	.haswheel .txtwrap p,
+	.haswheel .txtwrap .txt_ani_1 {
+		opacity: 1
+	}
+}

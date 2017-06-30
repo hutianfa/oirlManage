@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="adminDao" class="com.ltmcp.dao.hibimpl.AdminDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="basDictDao" class="com.ltmcp.dao.hibimpl.BasDictDaoHibImpl" parent="baseDao"></bean>
+	
+	
+	<bean id="firstOrderDao" class="com.ltmcp.dao.hibimpl.firstOrderDaoHibImpl" parent="baseDao"></bean>
+	<bean id="inventoryDao" class="com.ltmcp.dao.hibimpl.InventoryDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="carDao" class="com.ltmcp.dao.hibimpl.CarDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="companyDao" class="com.ltmcp.dao.hibimpl.CompanyDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="excRecordDao" class="com.ltmcp.dao.hibimpl.ExcRecordDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="freezeDao" class="com.ltmcp.dao.hibimpl.FreezeDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="personDao" class="com.ltmcp.dao.hibimpl.PersonDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="powerDao" class="com.ltmcp.dao.hibimpl.PowerDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="photoDao" class="com.ltmcp.dao.hibimpl.PhotoDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="roleDao" class="com.ltmcp.dao.hibimpl.RoleDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="rolePowerDao" class="com.ltmcp.dao.hibimpl.RolePowerDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="sealedDao" class="com.ltmcp.dao.hibimpl.SealedDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="positionDao" class="com.ltmcp.dao.hibimpl.PositionDaoHibImpl" parent="baseDao"></bean>
+
+	<bean id="positionExamineDao" class="com.ltmcp.dao.hibimpl.PositionExamineDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="positionExamineUserDao" class="com.ltmcp.dao.hibimpl.PositionExamineUserDaoHibImpl" parent="baseDao"></bean>
+
+	<bean id="empowerDao" class="com.ltmcp.dao.hibimpl.EmpowerDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="thingDao" class="com.ltmcp.dao.hibimpl.ThingDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="benefitDao" class="com.ltmcp.dao.hibimpl.BenefitDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="safeDao" class="com.ltmcp.dao.hibimpl.SafeDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="efficiencyDao" class="com.ltmcp.dao.hibimpl.EfficiencyDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="fixDao" class="com.ltmcp.dao.hibimpl.FixDaoHibImpl" parent="baseDao"></bean>
+	
+	<bean id="inputPetDao" class="com.ltmcp.dao.hibimpl.InputPetDaoHibImpl" parent="baseDao"></bean>	
+
+	<bean id="appNumDao" class="com.ltmcp.dao.hibimpl.AppNumDaoHibImpl" parent="baseDao"></bean>
+</beans>

@@ -1,0 +1,1 @@
+[{"appname":"jtapp12","ReadMe":"\n1.修正NFC定位卡与手机绑定的间断问题\n2.优化APP升级逻辑,改为强制升级策略\n3.增加消息推送功能,在APP或者服务器升\b\b\b级前,会通过推送消息提前通知,以便安\b\b\b\b\b\b排升级\n4.本版更新完,打开APP,会提示是否卸载,\b\b\b\b\b请选择**确定**,否则手机会有两个App\n5.优化了软件逻辑等其他问题.\n","apkname":"qianduan_rfid_35.apk","verName":3.5,"verCode":13}]

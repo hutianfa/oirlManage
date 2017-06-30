@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 登录信息处理 -->
+	<bean id="adminService" class="com.ltmcp.service.impl.AdminServiceImpl" parent="baseService">
+		<property name="adminDao" ref="adminDao"></property>
+	</bean>
+	
+	<!-- 字典信息处理 -->
+	<bean id="basDictService" class="com.ltmcp.service.impl.BasDictServiceImpl" parent="baseService">
+		<property name="basDictDao" ref="basDictDao"></property>
+	</bean>
+	<!-- firsrOrder厂家到二级分公司发货信息处理 -->
+	<bean id="firstOrderService" class="com.ltmcp.service.impl.firstOrderServiceImpl" parent="baseService">
+		<property name="firstOrderDao" ref="firstOrderDao"></property>
+	</bean>
+	
+	
+	<!-- 库存管理处理 20170515-->
+	<bean id="inventoryService" class="com.ltmcp.service.impl.InventoryServiceImpl" parent="baseService">
+		<property name="inventoryDao" ref="inventoryDao"></property>
+	</bean>
+	
+	
+	<!-- 车辆信息处理 -->
+	<bean id="carService" class="com.ltmcp.service.impl.CarServiceImpl" parent="baseService">
+		<property name="carDao" ref="carDao"></property>
+		<property name="sealedDao" ref="sealedDao"></property>
+	</bean>
+	<!-- 公司信息处理 -->
+	<bean id="companyService" class="com.ltmcp.service.impl.CompanyServiceImpl" parent="baseService">
+		<property name="companyDao" ref="companyDao"></property>
+	</bean>
+	
+	<!-- 异常信息处理 -->
+	<bean id="excRecordService" class="com.ltmcp.service.impl.ExcRecordServiceImpl" parent="baseService">
+		<property name="excRecordDao" ref="excRecordDao"></property>
+		<property name="basDictDao" ref="basDictDao"></property>
+		<property name="sealedDao" ref="sealedDao"></property>
+	
+	</bean>
+	
+	<bean id="freezeService" class="com.ltmcp.service.impl.FreezeServiceImpl" parent="baseService">
+		<property name="freezeDao" ref="freezeDao"></property>
+	</bean>
+	
+	<!-- 人员信息处理-->
+	<bean id="personService" class="com.ltmcp.service.impl.PersonServiceImpl" parent="baseService">
+		<property name="personDao" ref="personDao"></property>
+		<property name="positionDao" ref="positionDao"></property>
+	</bean>
+	
+	<!-- 位置信息处理 -->
+	<bean id="positionService" class="com.ltmcp.service.impl.PositionServiceImpl" parent="baseService">
+		<property name="positionDao" ref="positionDao"></property>
+		<property name="sealedDao" ref="sealedDao"></property>
+	</bean>
+	
+	<bean id="powerService" class="com.ltmcp.service.impl.PowerServiceImpl" parent="baseService">
+		<property name="powerDao" ref="powerDao"></property>
+	</bean>
+	
+	<bean id="rolePowerService" class="com.ltmcp.service.impl.RolePowerServiceImpl" parent="baseService"></bean>
+	
+	<!-- 运单信息处理 -->
+	<bean id="sealedService" class="com.ltmcp.service.impl.SealedServiceImpl" parent="baseService">
+		<property name="sealedDao" ref="sealedDao"></property>
+	</bean>
+	
+	<!-- 图片信息处理 -->
+	<bean id="photoService" class="com.ltmcp.service.impl.PhotoServiceImpl" parent="baseService">
+		<property name="photoDao" ref="photoDao"></property>
+	</bean>
+	
+	<!-- 位置审核 -->
+	<bean id="positionExamineService" class="com.ltmcp.service.impl.PositionExamineServiceImpl" parent="baseService">
+		<property name="positionExamineDao" ref="positionExamineDao"></property>
+	</bean>
+	
+	<!-- 位置上传 -->
+	<bean id="positionExamineUserService" class="com.ltmcp.service.impl.PositionExamineUserServiceImpl" parent="baseService">
+		<property name="positionExamineUserDao" ref="positionExamineUserDao"></property>
+	</bean>
+	
+	<!-- 授权信息处理 -->
+	<bean id="empowerService" class="com.ltmcp.service.impl.EmpowerServiceImpl" parent="baseService">
+		<property name="empowerDao" ref="empowerDao"></property>
+	</bean>
+	
+	<!-- 封签出入库信息处理 -->
+	<bean id="thingService" class="com.ltmcp.service.impl.ThingServiceImpl" parent="baseService">
+		<property name="thingDao" ref="thingDao"></property>
+	</bean>
+	
+	<!-- 效益之星 -->
+	<bean id="benefitService" class="com.ltmcp.service.impl.BenefitServiceImpl" parent="baseService">
+		<property name="benefitDao" ref="benefitDao"></property>
+	</bean>
+	
+	<!-- 安全之星 -->
+	<bean id="safeService" class="com.ltmcp.service.impl.SafeServiceImpl" parent="baseService">
+		<property name="safeDao" ref="safeDao"></property>
+	</bean>
+	
+	<!-- 效率之星 -->
+	<bean id="efficiencyService" class="com.ltmcp.service.impl.EfficiencyServiceImpl" parent="baseService">
+		<property name="efficiencyDao" ref="efficiencyDao"></property>
+	</bean>
+	
+	<!-- 固定封签管理 -->
+	<bean id="fixService" class="com.ltmcp.service.impl.FixServiceImpl" parent="baseService">
+		<property name="fixDao" ref="fixDao"></property>
+	</bean>
+	
+	<!-- web端信息录入 -->
+	<bean id="inputPetServcie" class="com.ltmcp.service.impl.InputPetServcieImpl" parent="baseService">
+		<property name="inputPetDao" ref="inputPetDao"></property>
+	</bean>
+
+
+	<!-- app定位检索 -->
+	<bean id="appNumService" class="com.ltmcp.service.impl.AppNumServiceImpl" parent="baseService">
+		<property name="appNumDao" ref="appNumDao"></property>
+	</bean>
+</beans>

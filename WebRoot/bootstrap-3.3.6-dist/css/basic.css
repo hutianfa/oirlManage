@@ -1,0 +1,313 @@
+/*==============================================
+    BASIC  STYLES    
+    =============================================*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height:25px;
+}
+
+#wrapper {
+    width: 100%;
+    background: #424f63;
+}
+
+#page-wrapper {
+    padding: 1px 10px;
+    min-height: 600px;
+    background: #F3F3F3;
+}
+.nav>li.user>a>.fa,.navbar .nav>li.user>a>.glyphicon,.navbar .nav>li.user>a>.ion{
+	margin-right:5px
+	}
+.nav>li>a.dropdown-toggle{
+	color: #ffffff;
+	}
+.nav>li>a>.label{
+	position:absolute;
+	top:9px;
+	right:7px;
+	text-align:center;
+	font-size:9px;
+	padding:2px 3px;
+	line-height:.9
+}
+.navbar .nav > li > a:hover,.navbar .nav > li > a:active,
+.navbar .nav > li > a:focus,.navbar .nav .open > a,
+.navbar .nav .open > a:hover,.navbar .nav .open > a:focus,
+.navbar .nav > .active > a{
+	background: rgba(0, 0, 0, 0.1);
+	color: #f6f6f6;
+	border-radius:4px;
+}
+#page-inner {
+    width: 100%;
+    margin: 10px 20px 10px 0px;
+    background-color: #fff!important;
+    padding: 10px;
+}
+
+.page-head-line {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #00CA79;
+    margin-bottom: 10px;
+}
+
+.page-subhead-line {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-style:italic;
+    margin-bottom:30px;
+    border-bottom:1px dashed #00CA79;
+
+}
+
+
+/*==============================================
+    MENU STYLES    
+    =============================================*/
+
+
+.navbar-cls-top .navbar-brand {
+    color: #fff;
+    background: #424f63;
+    max-width: 260px;
+    width:100%;
+    text-align: center;
+    height: 65px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    text-transform:uppercase;
+}
+.header-right {
+    color: #fff;
+    padding: 15px 30px 0px 30px;
+    float: right;
+    font-size: 16px;
+}
+.header-left {
+    color: #fff;
+    padding: 10px 30px 5px 30px;
+    float: left;
+    font-size: 16px;
+}
+
+.navbar-cls-top .navbar-brand:hover {
+    background: #424f63;
+    color: #fff;
+}
+
+.user-img-div {
+    min-height: 110px;
+    padding: 5px;
+    background-color: #4380B8;
+}
+
+    .user-img-div img {
+        max-height: 50px;
+    }
+
+    .user-img-div .inner-text {
+        text-align: center;
+        position: relative;
+        color: #fff;
+        font-weight: 800;
+        line-height: 25px;
+    }
+
+.active-menu {
+    background-color: #00CA79!important;
+}
+.active-menu-top {
+    background-color: ##353f4f!important;
+}
+
+.arrow {
+    float: right;
+    padding-top:5px;
+}
+
+.fa.arrow:before {
+    content: "\f0da";
+}
+
+.active > a > .fa.arrow:before {
+    content: "\f0d7";
+}
+
+
+.nav-second-level li,
+.nav-third-level li {
+    border-bottom: none !important;
+}
+
+    .nav-second-level li a {
+        padding-left: 37px;
+    }
+
+    .nav-third-level li a {
+        padding-left: 55px;
+    }
+
+.sidebar-collapse, .sidebar-collapse .nav {
+    background: none;
+}
+
+    .sidebar-collapse .nav {
+        padding: 0;
+    }
+
+        .sidebar-collapse .nav > li > a {
+            color: #fff;
+            background: #424f63;
+            text-shadow: none;
+            padding: 15px 20px;
+            border-bottom: 1px solid #353f4f;
+        }
+
+    .sidebar-collapse > .nav > li > a {
+        padding: 15px 10px;
+    }
+
+    .sidebar-collapse .nav > li > a:hover,
+    .sidebar-collapse .nav > li > a:focus {
+        background: #2A323F;
+        outline: 0;
+    }
+
+
+
+.nav-second-level > li:last-child > a:after,
+.nav-third-level > li:last-child > a:after {
+    height: 50%;
+}
+
+.nav-third-level > li > a:after,
+.nav-third-level > li > a:before {
+    left: 40px;
+}
+
+.navbar-side {
+    border: none;
+    background-color: #424f63;
+}
+
+.navbar-cls-top {
+    background: #00CA79;
+    border-bottom: none;
+}
+
+
+.navbar-default {
+    border: 0px solid black;
+}
+
+.navbar-header {
+    background: #424f63;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #00CA79;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #FFF;
+    }
+
+.nav > li > a > i {
+    margin-right: 10px;
+}
+/*===========================================
+   data add style
+========================================== */
+.red-bg {
+    color: #fff;
+    background: #d95043;
+    background-color: #d95043;
+    height:100px;
+    
+}
+.excblue-bg {
+    color: #fff;
+    background: #2387ec;
+    background-color: #2387ec;
+    height:100px;
+    
+}
+.excred-bg {
+    color: #fff;
+    background: #39a212;
+    background-color: #39a212;
+    height:100px;
+    
+}
+.green-bg {
+    color: #fff;
+    background: #26c281;
+    background-color: #26c281;
+    height:100px;
+}
+.blue-bg {
+    color: #fff;
+    background: #57889c;
+    background-color: #57889c;
+    height:100px;
+}
+.count {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.title {
+    line-height:50px;
+    margin-top: -10px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.info-box i {
+    display: block;
+    height: 100px;
+    font-size: 60px;
+    line-height: 100px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    padding-left: 40px;
+    color: rgba(255, 255, 255, 0.75);
+}
+/*==============================================
+    MEDIA QUERIES     
+  =============================================*/
+@media screen and (min-width: 320px) and (max-width: 761px) {
+	a,b{font-size:13px;}.header-right, .header-left{width:100%;float:none;}
+}
+@media (min-width:840px) {
+    #page-wrapper {
+       /*  margin: 0 0 0 260px;
+        padding: 15px 30px; */
+        width:86%;
+        margin-left:14%;
+    }
+    .navbar-side {
+        z-index: 1;
+        position: absolute;
+        width: 14%;
+    }
+
+    .navbar {
+        border-radius: 0px;
+    }    
+}
+@media screen and (min-width: 750px) and (max-width: 1500px) {
+	a,b{font-size:13px;}
+}
+

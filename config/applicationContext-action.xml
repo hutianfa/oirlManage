@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 登录管理 -->
+	<bean id="adminAction" class="com.ltmcp.action.AdminAction" scope="prototype"
+		parent="baseAction">
+		<property name="adminService" ref="adminService"></property>
+		<property name="powerService" ref="powerService"></property>
+		<property name="excRecordService" ref="excRecordService"></property>
+		<property name="sealedService" ref="sealedService"></property>
+	</bean>
+	<!--厂家到二级分公司订单管理 -->
+	<bean id="firstOrderAction" class="com.ltmcp.action.firstOrderAction" scope="prototype" parent="baseAction">
+		<property name="firstOrderService" ref="firstOrderService"></property>
+	</bean>
+	
+	<!--库存统计管理 -->
+	<bean id="inventoryAction" class="com.ltmcp.action.InventoryAction" scope="prototype" parent="baseAction">
+		<property name="adminService" ref="adminService"></property>
+		<property name="inventoryService" ref="inventoryService"></property><!-- 注意修改这里的service -->
+	</bean>
+	
+	<!-- 车辆管理 -->
+	<bean id="carAction" class="com.ltmcp.action.CarAction" scope="prototype"
+		parent="baseAction">
+		<property name="carService" ref="carService"></property>
+	</bean>
+
+	<!-- 异常管理 -->
+	<bean id="excRecordAction" class="com.ltmcp.action.ExcRecordAction"
+		scope="prototype" parent="baseAction">
+		<property name="excRecordService" ref="excRecordService"></property>
+	</bean>
+
+	<!-- 人员管理 -->
+	<bean id="personAction" class="com.ltmcp.action.PersonAction"
+		scope="prototype" parent="baseAction">
+		<property name="personService" ref="personService"></property>
+		<property name="sealedService" ref="sealedService"></property>
+	</bean>
+
+	<!-- 位置管理 -->
+	<bean id="positionAction" class="com.ltmcp.action.PositionAction"
+		scope="prototype" parent="baseAction">
+		<property name="positionService" ref="positionService"></property>
+	</bean>
+
+
+	<!-- 公司管理 -->
+	<bean id="companyAction" class="com.ltmcp.action.CompanyAction"
+		scope="prototype" parent="baseAction">
+		<property name="companyService" ref="companyService"></property>
+	</bean>
+
+	<!-- 运单管理 -->
+	<bean id="handleWaybill" class="com.ltmcp.action.HandleWaybillAction"
+		scope="prototype" parent="baseAction">
+		<property name="sealedService" ref="sealedService"></property>
+		<property name="freezeService" ref="freezeService"></property>
+		<property name="excRecordService" ref="excRecordService"></property>
+	</bean>
+
+	<!-- 图片管理 -->
+	<bean id="photoAction" class="com.ltmcp.action.PhotoAction" scope="prototype"
+		parent="baseAction">
+		<property name="photoService" ref="photoService"></property>
+	</bean>
+
+	<!-- 报表管理 -->
+	<bean id="reportForm" class="com.ltmcp.action.ReportFormAction"
+		scope="prototype" parent="baseAction">
+		<property name="excRecordService" ref="excRecordService"></property>
+		<property name="sealedService" ref="sealedService"></property>
+	</bean>
+
+	<!-- 位置审核 -->
+	<bean id="positionExamine" class="com.ltmcp.action.PositionExamineAction"
+		scope="prototype" parent="baseAction">
+		<property name="positionExamineService" ref="positionExamineService"></property>
+		<property name="positionService" ref="positionService"></property>
+
+	</bean>
+
+	<!-- 位置上传者 -->
+	<bean id="positionExamineUser" class="com.ltmcp.action.PositionExamineUserAction"
+		scope="prototype" parent="baseAction">
+		<property name="positionExamineUserService" ref="positionExamineUserService"></property>
+	</bean>
+	<!-- 授权管理 -->
+	<bean id="empowerAction" class="com.ltmcp.action.EmpowerAction"
+		scope="prototype" parent="baseAction">
+		<property name="empowerService" ref="empowerService"></property>
+	</bean>
+	<!-- 封签出入库管理 -->
+	<bean id="thingsAction" class="com.ltmcp.action.ThingsAction"
+		scope="prototype" parent="baseAction">
+		<property name="thingService" ref="thingService"></property>
+	</bean>
+
+	<!-- 效益之星 -->
+	<bean id="benefitAction" class="com.ltmcp.action.BenefitAction"
+		scope="prototype" parent="baseAction">
+		<property name="benefitService" ref="benefitService"></property>
+	</bean>
+
+	<!-- 安全之星 -->
+	<bean id="safeAction" class="com.ltmcp.action.SafeAction" scope="prototype"
+		parent="baseAction">
+		<property name="safeService" ref="safeService"></property>
+	</bean>
+
+	<!-- 效率之星 -->
+	<bean id="efficiencyAction" class="com.ltmcp.action.EfficiencyAction"
+		scope="prototype" parent="baseAction">
+		<property name="efficiencyService" ref="efficiencyService"></property>
+	</bean>
+
+	<!-- 固定封签管理 -->
+	<bean id="fixAction" class="com.ltmcp.action.FixAction" scope="prototype"
+		parent="baseAction">
+		<property name="fixService" ref="fixService"></property>
+	</bean>
+
+	<!-- web端录入油损信息 -->
+	<bean id="insertAction" class="com.ltmcp.action.InsertAction"
+		scope="prototype" parent="baseAction">
+		<property name="inputPetServcie" ref="inputPetServcie"></property>
+	</bean>
+
+	<!-- app定位信息检索 -->
+	<bean id="appNumAction" class="com.ltmcp.action.AppNumAction"
+		scope="prototype" parent="baseAction">
+		<property name="appNumService" ref="appNumService"></property>
+	</bean>
+</beans>

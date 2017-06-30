@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+img{border:none;}
+a,p,span,div,li{
+	 font-size:12px;
+}
+a{
+	text-decoration:none;
+	color:#FFF;	
+	cursor:pointer;
+	font-weight:bold;
+}
+a:hover{
+	 color:#CC3;
+	}
+.activeCss{
+	background: #105488;
+    font-weight: bold;
+    border: 1px solid #0f4e7f;
+    width:35px;
+    height:35px;
+}
+.main{
+	 max-width: 1920px;
+     min-width: 1160px;
+	 height:auto;
+	 margin:auto;
+	 background-color: #e9e9e9;
+	}
+ #tableExcel th,td{white-space:nowrap;}
+ .bordered th,td{white-space:nowrap;}
+ dl,dt,dd{display:block;margin:0;}
+ .top{
+	max-width: 1920px;
+    min-width: 1160px;
+	height:6em;
+	background:rgba(30,113,177,1);
+	}
+.top-lefttitle{
+	 width:62%;
+	 float:left;
+	 line-height:2em;
+	 font-size:36px;
+	 margin-left:2em;
+	 font-stretch:semi-expanded;
+	 font-family: Segoe UI, Verdana, sans-serif;  
+	 color:#fff;
+	 text-shadow: -3px 0 4px #006; 
+	 text-align:left; 
+	}
+.top-rigtitle{
+	  width:18%;
+	  float:right;
+	  line-height:6em;
+	  text-align:left;
+	  margin-right:8em;
+	 }
+.top-rigtitle span{
+	 font-size:12px;	 
+	 color:#fff;
+	}
+.down{
+	max-width: 1920px;
+    min-width: 1160px;
+	height:71em;
+	margin-top:0.2em;
+	}
+.down-left{
+	text-align: left;
+	width:14%;
+	height:71em;
+	float:left;
+     border:1px solid #09C;
+    -webkit-box-shadow:0 0 18px rgba(111,1,32,3);
+	-moz-box-shadow:0 0 18px rgba(111,1,32,3);
+	-ms-box-shadow:0 0 18px rgba(111,1,32,3);
+	-o-box-shadow:0 0 18px rgba(111,1,32,3);
+    box-shadow: 3px 3px 10px #9edeff;
+	}
+.left-title{
+	background-color:#DEFOFE;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(3, 83, 146)),to(rgb(28, 119, 200)));
+	background-image: -webkit-linear-gradient(top, rgb(3, 83, 146), rgb(28, 119, 200));
+	background-image: -moz-linear-gradient(top, rgb(3, 83, 146), rgb(28, 119, 200));
+	background-image: -o-linear-gradient(top, rgb(3, 83, 146), rgb(28, 119, 200));
+	background-image: -ms-linear-gradient(top, rgb(3, 83, 146), rgb(28, 119, 200));
+	background-image: linear-gradient(top, rgb(3, 83, 146), rgb(28, 119, 200));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#45c7eb', EndColorStr='#2698db');
+	height:2em;
+	color:#FFF;
+	font-size:16px;
+	text-align:center;
+	font-weight: bold;
+    padding-top: 5px;
+    font-family:"微软雅黑";
+	}
+  .warpmenu{
+	 width:auto;
+	 height:auto;
+	 margin:auto;
+	}
+  .downrig{
+	width:85%;
+	height:70em;
+	float:right;
+   }
+	#confirmOverlay {
+		    background:black;
+		    height:78em;
+		    left: 0;
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		    z-index: 1000;
+		    -moz-opacity: 0.7; 
+			opacity:.70; 
+			filter: alpha(opacity=70);
+	}
+	#confirmBox {
+	    background:#fff;
+	    border: 1px solid rgba(33, 33, 33, 0.6);
+	    box-shadow: 0 0 2px rgba(255, 255, 255, 0.6) inset;
+	    left: 50%;
+	    position: absolute;
+	    width: 350px;
+	    z-index:1003;
+	}
+	#confirmBox h1, #confirmBox p {
+	    background: #f5f5f5 url("header_bg.jpg") repeat-x scroll left bottom;
+	    color: #666;
+	    font: 24px/1 "Cuprum","Lucida Sans Unicode","Lucida Grande",sans-serif;
+	    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+	}
+	#confirmBox h1 {
+	    color: #888;
+	    letter-spacing: 0.3px;
+	}
+	#confirmBox p {
+	    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	    font-size: 16px;
+	    line-height: 1.4;
+	    padding-top: 35px;
+	}
+	#confirmButtons {
+	    padding: 15px 0 25px;
+	    text-align: center;
+	}
+	#confirmBox .button {
+	    background: rgba(0, 0, 0, 0) url("common/img/buttons.png") no-repeat scroll 0 0;
+	    border: medium none;
+	    color: white;
+	    display: inline-block;
+	    font: 17px/33px "Cuprum","Lucida Sans Unicode","Lucida Grande",sans-serif;
+	    height: 33px;
+	    margin-right: 15px;
+	    padding: 0 35px 0 40px;
+	    position: relative;
+	    text-decoration: none;
+	}
+	#confirmBox .button:last-child {
+	    margin-right: 0;
+	}
+	#confirmBox .button span {
+	    background: rgba(0, 0, 0, 0) url("common/img/buttons.png") no-repeat scroll 0 0;
+	    height: 33px;
+	    position: absolute;
+	    right: -5px;
+	    top: 0;
+	    width: 5px;
+	}
+	#confirmBox .blue {
+	    background-position: left top;
+	    text-shadow: 1px 1px 0 #5889a2;
+	}
+	#confirmBox .blue span {
+	    background-position: -195px 0;
+	}
+	#confirmBox .blue:hover {
+	    background-position: left bottom;
+	}
+	#confirmBox .blue:hover span {
+	    background-position: -195px bottom;
+	}
+	#confirmBox .gray {
+	    background-position: -200px top;
+	    text-shadow: 1px 1px 0 #707070;
+	}
+	#confirmBox .gray span {
+	    background-position: -395px 0;
+	}
+	#confirmBox .gray:hover {
+	    background-position: -200px bottom;
+	}
+	#confirmBox .gray:hover span {
+	    background-position: -395px bottom;
+	}
+	//弹出层样式
+	.warptab{
+			 height:auto;
+	}
+	.warptab tr td{
+		   width:32%;
+		   margin:auto;
+		   text-align:left;
+		   height:3em;
+	   }
+	   /* 所有详情信息背景 */
+	   .detail-top{
+	      background:#FFFFCC;
+	   }
+	
+	input[type=button]{
+	    display: inline-block;
+	    padding: 2px 4px;
+	    margin-bottom: 0;
+	    font-size: 14px;
+	    color: #333;
+	    text-align: center;
+	    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+	    vertical-align: middle;
+	    cursor: pointer;
+	    color: #fff;
+	    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	    background-color: #006dcc;
+	    background-image: -moz-linear-gradient(top,#08c,#04c);
+	    background-image: -webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));
+	    background-image: -webkit-linear-gradient(top,#08c,#04c);
+	    background-image: -o-linear-gradient(top,#08c,#04c);
+	    background-image: linear-gradient(to bottom,#08c,#04c);
+	    background-repeat: repeat-x;
+	    border-color: #04c #04c #002a80;
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);
+	    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+	    border: 1px solid #ccc;
+	    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	    border-bottom-color: #b3b3b3;
+	    -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+	    border-radius: 4px;	   
+	    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	 }
+	 .comsty{ border-radius:0px 5px 5px 0px;margin-left: -7px;border: 1px solid #ccc;height: 28px;outline: none;}
+	 .browsercss{padding:3.5px 12px !important;} .box{float:left;padding:5px;}
+	 /*查询条件栏公共样式  */ 
+	 .input-group-addon{width:auto;display:inline;*padding:4px 12px;_padding:4px 12px;}
+	 .table tr th,tr td {word-break: keep-all;font-family:"微软雅黑"} 	
+	 table .box .comsty{height: 30px; margin-top: -2px;}	
+	 table .box .searchable-select-holder{height:30px;}
+     /*关闭图标设置  */
+     button.close{border-radius:4px;}
+     .widget-title a.a-btn{line-height: 36px;color: #fff;text-align: left;display: inline-block;
+         height: 34px;float: left;padding: 0px 5px;font-family: "微软雅黑";text-decoration: none;margin-right:5px}
+     a.a-btn span{font-size:14px;}
+     .widget-title a.a-btn:hover{color: #FFF!important;text-shadow: 0 -1px 0 rgba(0,0,0,0.25)!important;
+	    background-image: none!important;border: 1px solid #FFF; border-radius: 0; box-shadow: none!important;
+	    -webkit-transition: all ease .10s;transition: all ease .10s;cursor: pointer;vertical-align: middle;margin: 0;
+	}
+	.name a:hover{ text-decoration:none;}
+ 
+    /* 加载效果设置 */
+    .loadlaycss{background-color:none,height:auto}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

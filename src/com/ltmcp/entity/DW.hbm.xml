@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.ltmcp.entity.DW" table="dw">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+         
+        <property name="pid" type="java.lang.Integer">
+            <column name="pid" />
+        </property>
+        
+        <property name="comid" type="java.lang.Integer">
+            <column name="comid" />
+        </property>
+        
+        <property name="pname" type="java.lang.String">
+            <column name="pname" />
+        </property>
+        
+        <property name="time" type="java.sql.Timestamp">
+            <column name="time"/>
+        </property>
+        
+        <property name="nfc" type="java.lang.String">
+            <column name="nfc" />
+        </property>
+        
+        
+        <property name="success" type="java.lang.String">
+            <column name="success" />
+        </property>
+        
+        <property name="imei" type="java.lang.String">
+            <column name="imei" />
+        </property>
+        
+        <property name="appNum" type="java.lang.String">
+            <column name="appNum" />
+        </property>
+ 
+    </class>
+</hibernate-mapping>

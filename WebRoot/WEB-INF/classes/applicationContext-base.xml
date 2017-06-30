@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+
+	<!-- 配置数据源 -->
+	<bean id="dbcp" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<!-- 测试本地数据库-->
+		<property name="url" value="jdbc:mysql://192.168.0.66:3306/ltmcpp"></property>
+		<property name="username" value="root"></property>
+		
+		<!-- <property name="url" value="jdbc:mysql://123.56.4.35:3306/ltmcp"></property> -->
+		<property name="password" value="root"></property>
+		<!-- <property name="password" value="5rt6809A"></property> --> 
+	</bean>
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dbcp" />
+		</property>
+		 <property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				
+				  <!--  <prop key="hibernate.show_sql">true</prop>
+				 <prop key="hibernate.format_sql">false</prop>-->
+			</props>
+		</property>
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:com/ltmcp/entity/</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 打开事务管理器 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- 事务增强 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="change*" propagation="REQUIRED"/>
+			<tx:method name="del*" propagation="REQUIRED"/>
+			<tx:method name="error_appReturn" propagation="REQUIRED"/>	
+			<tx:method name="add*" propagation="REQUIRED"/>		
+			<tx:method name="do*" propagation="REQUIRED"/>
+			<tx:method name="get*" read-only="true"/>
+			<tx:method name="search*" read-only="true"/>
+			<tx:method name="list*" read-only="true" />
+			<tx:method name="photo_photoReport" read-only="true" />
+			<tx:method name="*" read-only="false"/>			
+		</tx:attributes>
+	</tx:advice>
+	
+	<!-- 组合 -->
+	<aop:config>
+		<aop:pointcut expression="execution(* com.ltmcp.service.*.*(..))" id="serviceMethod"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethod"/>
+	</aop:config>
+	<aop:config>
+		<aop:pointcut expression="execution(* com.ltmcp.biz.*.*(..))" id="bizMethod"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="bizMethod"/>
+	</aop:config>
+	
+	
+	<bean id="baseAction" class="com.ltmcp.action.BaseAction"></bean>
+	<bean id="baseDao" class="com.ltmcp.dao.hibimpl.BaseDaoHibImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="baseService" class="com.ltmcp.service.impl.BaseServiceImpl"></bean>
+	
+	<import resource="applicationContext-action.xml"/>
+	<import resource="applicationContext-service.xml"/>
+	<import resource="applicationContext-dao.xml"/>
+	<import resource="applicationContext-mobile-action.xml"/>
+	<import resource="applicationContext-mobile-biz.xml"/>
+	<import resource="applicationContext-mobile-dao.xml"/>
+	
+</beans>

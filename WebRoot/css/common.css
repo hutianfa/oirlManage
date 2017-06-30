@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:auto;
+	padding:0px;
+}
+input {
+	outline:none;
+}
+ul li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	cursor:pointer;
+}

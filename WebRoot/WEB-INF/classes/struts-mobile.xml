@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<!-- 操作人员处理 -->
+	<package name="person_mobile_manager" namespace="/mobile" extends="struts-default">
+		<action name="person_*" class="personMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- 车辆处理 -->
+	<package name="car_mobile_manager" namespace="/mobile" extends="struts-default">
+		<action name="car_*" class="carMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- 词典处理 -->
+	<package name="basdict_mobile_manager" namespace="/mobile" extends="struts-default">
+		<action name="bas_*" class="basDictMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- 运单处理 -->
+	<package name="waybill_mobile_manager" namespace="/mobile" extends="struts-default">
+		<action name="waybill_*" class="wayBillMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- 固定封签处理 -->
+	<package name="fix_mobile_manager" namespace="/mobile" extends="struts-default">
+		<action name="fix_*" class="fixSeaFreMobileAction" method="{1}"></action>
+	</package>
+
+	<!-- 安卓处理 -->
+	<package name="version_mobile_manager" namespace="/mobile" extends="struts-default">
+		<action name="version_*" class="androidVersionMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- 位置管理 -->
+	<package name="position_mobile_manager" namespace="/mobile" extends="struts-default">
+		<action name="position_*" class="positionMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- 位置上传管理 -->
+	<package name="position_mobile_user_examine" namespace="/mobile" extends="struts-default">
+		<action name="examine_user_*" class="positionExamineUserMobileAction" method="{1}">
+		</action>
+	</package>
+	
+	<!-- 位置上传管理 -->
+	<package name="position_mobile_examine" namespace="/mobile" extends="struts-default">
+		<action name="examine_*" class="positionExamineMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- 二维码注册管理 -->
+	<package name="regist" namespace="/mobile" extends="struts-default">
+		<action name="regist_*" class="saveCodeAction" method="{1}"></action>
+	</package>
+	
+	<!-- 分发系统管理 @@@@@@@-->
+	<package name="distribution" namespace="/mobile" extends="struts-default">
+		<action name="distribution_*" class="distributionAction" method="{1}"></action>
+	</package>
+	
+	<!-- 异常管理 -->
+	<package name="exrMobileAction" namespace="/mobile" extends="struts-default" >
+		<action name="exr_*" class="exrMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- app 错误日志上传管理 -->
+	<package name="appLogAction" namespace="/mobile" extends="struts-default" >
+		<action name="log_*" class="appLogAction" method="{1}"></action>
+	</package>
+	
+	<!-- app应用异常管理 -->
+	<package name="appErrorMobileAction" namespace="/mobile" extends="struts-default" >
+		<action name="error_*" class="appErrorMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- 外购客户查询运单信息-->
+	<package name="outsourcingMobileAction" namespace="/mobile" extends="struts-default" >
+		<action name="out_*" class="outsourcingMobileAction" method="{1}"></action>
+	</package>
+
+	<!-- mail-->
+	<package name="mailMobileAction"  namespace="/mobile" extends="struts-default" >
+		<action name="mail_*" class="mailMobileAction" method="{1}"></action>
+	</package>
+	
+	<!-- 公共信息获取-->
+	<package name="mobileCommAction"  namespace="/mobile" extends="struts-default" >
+		<action name="comm_*" class="mobileCommAction" method="{1}"></action>
+	</package>
+</struts>    
